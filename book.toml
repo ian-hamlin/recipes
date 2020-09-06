@@ -5,13 +5,9 @@ multilingual = false
 src = "src"
 title = "Recipes"
 description = "A collection of recipes"
-no-section-label = true
 
 [output.html]
 site-url = "/recipes/"
-
-[output.html.playground]
-copyable = false
 
 [build]
 build-dir = "docs"
