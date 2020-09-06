@@ -16,4 +16,4 @@
 - 200 ml water
 - 3 tbsp tahini
 - sweetcorn
-- black beans
+- 1 tin of beans (black beans/mixed beans/black eyed beans etc)
