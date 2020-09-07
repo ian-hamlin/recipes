@@ -18,6 +18,11 @@
 - 1 teaspoon ground cumin.
 - 1/2 teaspoon ground black pepper.
 
+## Optional Ingredients
+
+- Ritz Crackers
+- Lime
+
 ## Directions
 
 In a deep pot mix in lentils and all the vegetables. Add 1 liter of stock then bring to a boil over medium high heat.
@@ -27,3 +32,7 @@ Partially cover the pot and reduce heat to medium. Cook for 20 minutes or until 
 Blend to your preferred consistency. Add spices and mix well. Check to adjust seasonings.
 
 Check for consistency, if thick for your liking add water
+
+## Serve
+
+- Squeeze of lime juice and a portion of Ritz Crackers
