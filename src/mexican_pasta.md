@@ -10,7 +10,7 @@
 - 4 cloves garlic - chopped
 - 2 green chilis - chopped
 - 1 red bell pepper - diced
-- 1 pack Old El Paso Chilli Seasoning Mix
+- 1 pack Old El Paso Chili Seasoning Mix
 - 225g Seeds of Change pasta spinach trottole
 - 500 ml passata
 - 200 ml water
