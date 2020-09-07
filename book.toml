@@ -6,5 +6,8 @@ src = "src"
 title = "Recipes"
 description = "A collection of recipes"
 
+[output.html]
+no-section-label = true
+
 [build]
 build-dir = "docs"
