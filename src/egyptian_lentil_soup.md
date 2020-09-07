@@ -1,6 +1,6 @@
 # Egyptian Lentil Soup
 
-![Body frame](/recipes/content/images/gyptian_lentil_soup.jpeg)
+![Egyptian Lentil Soup](/recipes/content/images/egyptian_lentil_soup.jpeg)
 
 ## Notes
 
