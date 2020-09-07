@@ -1,5 +1,7 @@
 # Egyptian Lentil Soup
 
+![Body frame](/content/images/egyptian_lentil_soup.jpeg)
+
 ## Notes
 
 > Makes 3 servings

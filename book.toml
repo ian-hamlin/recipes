@@ -6,8 +6,5 @@ src = "src"
 title = "Recipes"
 description = "A collection of recipes"
 
-[output.html]
-site-url = "/recipes/"
-
 [build]
 build-dir = "docs"
