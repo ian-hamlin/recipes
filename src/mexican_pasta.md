@@ -8,9 +8,9 @@
 
 - 1 onion - diced
 - 4 cloves garlic - chopped
-- 2 green chilis - chopped
+- 2 green chillis - chopped
 - 1 red bell pepper - diced
-- 1 pack Old El Paso Chili Seasoning Mix
+- 1 pack Old El Paso Chilli Seasoning Mix
 - 225g Seeds of Change pasta spinach trottole
 - 500 ml passata
 - 200 ml water
@@ -20,7 +20,7 @@
 
 ## Directions
 
-In a pan, heat some oil and add the onion, garlic, and chilis. Sauté for 5 minutes, then mix in the bell pepper and taco seasoning.
+In a pan, heat some oil and add the onion, garlic, and chillis. Sauté for 5 minutes, then mix in the bell pepper and taco seasoning.
 
 Once fragrant, stir in pasta, water, and passata. Cover the pan and simmer on medium heat for 10 minutes, stirring occasionally to prevent sticking, then add in corn and beans.
 
