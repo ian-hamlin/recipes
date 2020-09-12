@@ -11,3 +11,7 @@ no-section-label = true
 
 [build]
 build-dir = "docs" 
+
+# [preprocessor.toc]
+# command = "mdbook-toc"
+# renderers = ["html"]

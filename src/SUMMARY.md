@@ -1,6 +1,9 @@
 # Summary
 
 - [Recipes](./recipes.md)
-  - [Mexican Pasta](./mexican_pasta.md)
+  - [Banana Bread](./banana_bread)
+  - [Bean Mix](./bean_mix.md)
   - [Egyptian Lentil Soup](./egyptian_lentil_soup.md)
   - [Horchata](.horchata.md)
+  - [Mexican Pasta](./mexican_pasta.md)
+  - [Mushroom Stroganoff](./mushroom_stroganoff.md)
