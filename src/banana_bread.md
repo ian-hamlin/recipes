@@ -3,16 +3,16 @@
 ## Ingredients
 
 - 3 medium overripe bananas
-- 1/3 cup organic granulated sugar
-- 1/3 cup organic brown sugar
-- 1/3 cup canola oil (or your favorite baking oil)
+- 70g granulated sugar
+- 70g brown sugar
+- 78ml vegetable oil
 - 2 teaspoons vanilla extract
-- 2 cups all-purpose flour
-- 1 teaspoon baking soda
-- 1 teaspoon ground cinnamon
-- 1 teaspoon salt
-- 1 cup chopped walnuts (or pecans, vegan chocolate chips, or your favorite b
-- 1/4 cup organic brown sugar
+- 250g all-purpose flour
+- 5g baking soda
+- 5g ground cinnamon
+- 5g teaspoon salt
+- 100g chopped walnuts (or pecans, or chocolate chips)
+- brown sugar to sprinkle on top
 
 ## Directions
 
@@ -26,7 +26,7 @@ Add sugar, brown sugar, oil, and vanilla to the bowl. Stir until well-mixed.
 
 Add the flour to the bowl, then sprinkle the baking soda, cinnamon and salt on top of the flour.
 
-Stir everything together just until mixed. Don't overmix. The batter will be thick.
+Stir everything together just until mixed. Don't over-mix. The batter will be thick.
 
 Fold in the walnuts.
 
@@ -36,4 +36,4 @@ Sprinkle the top with brown sugar.
 
 Bake for 50 minutes, or until a toothpick inserted into the center comes out clean.
 
-Remove the pan from the oven and transfer it to a cooling rack. Allow the loaf to cool for at least 15 minutes before removing it from the pan.
+Remove the pan from the oven and transfer it to a cooling rack.
