@@ -37,4 +37,4 @@ Finally add freshly chopped parsley and stir it into the stroganoff, leaving som
 
 ## Serve
 
-- Serve with brown rice
+- With brown rice
