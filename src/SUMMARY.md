@@ -1,7 +1,7 @@
 # Summary
 
 - [Recipes](./recipes.md)
-  - [Banana Bread](./banana_bread)
+  - [Banana Bread](./banana_bread.md)
   - [Bean Mix](./bean_mix.md)
   - [Egyptian Lentil Soup](./egyptian_lentil_soup.md)
   - [Horchata](.horchata.md)
