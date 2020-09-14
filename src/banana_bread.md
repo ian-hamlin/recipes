@@ -1,5 +1,7 @@
 # Banana Bread
 
+![Banana Bread](/recipes/content/images/banana_bread.jpeg)
+
 ## Ingredients
 
 - 3 medium overripe bananas
