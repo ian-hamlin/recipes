@@ -16,7 +16,7 @@
 
 ## Directions
 
-Boiling peas, and once they're cooked pour the water away but leave the peas in the pan.
+Boil the peas, and once they're cooked pour the water away but leave the peas in the pan.
 
 Stir in a tablespoon of olive oil.
 
