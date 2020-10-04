@@ -6,22 +6,20 @@
 
 ## Ingredients
 
-- 200g Basmati rice
-- 450ml cold water
-- 2 tbsp sunflower oil
-- &#189; white onion, peeled and chopped
-- 2 garlic cloves, crushed
-- &#189; green pepper, thinly sliced
-- &#189; can chopped tomatoes
-- &#189; tsp ground turmeric
-- &#189; tsp cayenne pepper
-- &#189; tsp smoked paprika
+- 400g Basmati rice
+- 900ml cold water
+- 2 tbsp vegetable oil
+- 1 white onion, peeled and chopped
+- 4 garlic cloves, chopped
+- 2 green chilies, chopped
+- 1 tin chopped tomatoes
+- 1 tsp ground turmeric
+- 1 tsp cayenne pepper
+- 1 tsp smoked paprika
 - 1 tsp salt
-- Juice from one lemon
-- Handful of coriander
 
 ## Directions
 
-Pour your rice into a pan along with your onion and one tablespoon of olive oil and salt, then turn it to a medium heat.
+Pour your rice into a pan along with your onion and one tablespoon of vegetable oil and salt, and cook for a minute until the onion is transparent. Then stir in chipped garlic and chilies, and then tin of tomatoes and 900 ml of water. Once it boils, cover and lower the heat. Stir occasionally.
 
-When the rice is nearly done turn down the heat, and add in your seasonings - turmeric, cayenne pepper and smoked paprika - and leave it on the heat until cooked.
+When the rice is nearly done turn off the heat, add in your seasonings - turmeric, cayenne pepper and smoked paprika - cover until it's done.
