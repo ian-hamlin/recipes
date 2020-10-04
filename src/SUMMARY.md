@@ -9,3 +9,5 @@
   - [Horchata](./horchata.md)
   - [Mexican Pasta](./mexican_pasta.md)
   - [Mushroom Stroganoff](./mushroom_stroganoff.md)
+  - [Nandos Macho Peas](./nandos_macho_peas.md)
+  - [Nandos Spicy Rice](./nandos_spicy_rice.md)
