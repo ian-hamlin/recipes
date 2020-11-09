@@ -16,7 +16,7 @@
 - 1 liter vegetable stock
 - 2 teaspoons salt
 - 1 teaspoon ground cumin.
-- 1/2 teaspoon ground black pepper.
+- &#189; teaspoon ground black pepper.
 
 ## Optional Ingredients
 
