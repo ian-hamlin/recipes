@@ -1,5 +1,9 @@
 # Goulash
 
+## Notes
+
+> Makes 4 servings
+
 ## Ingredients
 
 - 200g of dried soy chunks,
