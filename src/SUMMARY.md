@@ -8,6 +8,7 @@
   - [Crunchy Kale Crisps](./crunchy_kale_crisps.md)
   - [Egyptian Lentil Soup](./egyptian_lentil_soup.md)
   - [Empanadas](./empanadas.md)
+  - [Goulash](./goulash.md)
   - [Horchata](./horchata.md)
   - [Mexican Pasta](./mexican_pasta.md)
   - [Mushroom Stroganoff](./mushroom_stroganoff.md)
