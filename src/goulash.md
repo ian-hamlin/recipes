@@ -22,6 +22,7 @@
 - Black pepper
 - Olive oil
 - Mustard
+- 1 tin of butter beans
 
 ## Directions
 
