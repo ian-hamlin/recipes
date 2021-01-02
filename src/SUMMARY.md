@@ -10,6 +10,7 @@
   - [Empanadas](./empanadas.md)
   - [Goulash](./goulash.md)
   - [Horchata](./horchata.md)
+  - [Margarita](./margarita.md)
   - [Mexican Pasta](./mexican_pasta.md)
   - [Mushroom Stroganoff](./mushroom_stroganoff.md)
   - [Nandos Macho Peas](./nandos_macho_peas.md)

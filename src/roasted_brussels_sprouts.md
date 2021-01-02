@@ -7,7 +7,7 @@
 - A Handful dried cranberries ⁣
 - 3 tbsp balsamic vinegar ⁣
 - 2 tbsp maple syrup⁣
-- &#189;tsp garlic granules - 1/2 tsp dried chilli flakes - olive oil, for cooking⁣
+- &#189;tsp garlic granules - &#189; tsp dried chilli flakes - olive oil, for cooking⁣
 - salt & pepper⁣
 
 ## Directions
