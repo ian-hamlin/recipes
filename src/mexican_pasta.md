@@ -13,7 +13,7 @@
 - 1 pack Old El Paso Chilli Seasoning Mix
 - 225g Seeds of Change pasta spinach trottole
 - 500ml passata
-- 250ml water
+- 300ml water
 - 3 tbsp tahini
 - sweetcorn - 1 tin
 - black beans - 1 tin
