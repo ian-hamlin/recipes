@@ -23,7 +23,7 @@ Cook the noodles according to instructions. Bring a pot of water to a boil. Add 
 
 In a bowl combine the soy sauce, sesame oil, sugar and ginger. Mix well and set aside.
 
-Heat oil in a large skillet over medium heat. Add onions, garlic, chile, bell peppers and mushrooms and cook for 4 minutes. Stir occasionally.
+Heat oil in a large skillet over medium heat. Add onions, garlic, chilli, bell peppers and mushrooms and cook for 4 minutes. Stir occasionally.
 
 Add the broccoli and other veggies if using and a dash of salt and black pepper and cook for another 3 to 4 minutes or until mushrooms are golden brown.
 
