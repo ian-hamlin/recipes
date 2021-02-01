@@ -5,6 +5,7 @@
   - [Bean Mix](./bean_mix.md)
   - ["Beef" Wellington](./beef_wellington.md)
   - [Black Bean Plantain Chilli](./black_bean_plantain_chilli.md)
+  - [Blueberry & coconut smoothie](./blueberry_and_coconut_smoothie.md)
   - [Crunchy Kale Crisps](./crunchy_kale_crisps.md)
   - [Egyptian Lentil Soup](./egyptian_lentil_soup.md)
   - [Empanadas](./empanadas.md)
