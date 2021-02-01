@@ -6,11 +6,10 @@
 
 ## Ingredients
 
-- 250g blueberries
+- 250g blueberries (Frozen or add ice cubes)
 - 400ml coconut milk
 - 2 tbsp maple syrup
 - 1 tsp vanilla extract
-- ice cubes
 
 ## Directions
 
