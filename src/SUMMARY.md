@@ -10,6 +10,7 @@
   - [Crunchy Kale Crisps](./crunchy_kale_crisps.md)
   - [Egyptian Lentil Soup](./egyptian_lentil_soup.md)
   - [Empanadas](./empanadas.md)
+  - [Ethiopian Wild Rice Pilaf](./ethiopian_wild_rice_pilaf.md)
   - [Goulash](./goulash.md)
   - [Horchata](./horchata.md)
   - [Lo Mein with Soba Noodles](./lo_mein_with_soba_noodles.md)
