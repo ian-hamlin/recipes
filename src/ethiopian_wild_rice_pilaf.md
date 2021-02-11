@@ -1,5 +1,7 @@
 # Ethiopian Wild Rice Pilaf
 
+![Ethiopian Wild Rice Pilaf](/recipes/content/images/ethiopian_wild_rice_pilaf.jpeg)
+
 ## Notes
 
 > Makes 4 servings
