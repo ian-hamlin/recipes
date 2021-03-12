@@ -11,6 +11,7 @@
   - [Egyptian Lentil Soup](./egyptian_lentil_soup.md)
   - [Empanadas](./empanadas.md)
   - [Ethiopian Wild Rice Pilaf](./ethiopian_wild_rice_pilaf.md)
+  - [Feta Cheese And Tomato Pasta](./feta_cheese_and_tomato_pasta.md)
   - [Goulash](./goulash.md)
   - [Horchata](./horchata.md)
   - [Lo Mein with Soba Noodles](./lo_mein_with_soba_noodles.md)
