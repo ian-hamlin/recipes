@@ -28,6 +28,15 @@
 - 1 Tbsp honey 15 g
 - 3 cloves garlic
 
+### Alternate Sauce
+
+- 2 tbsp peanut butter
+- &#189; lime
+- 1 tbsp brown sugar
+- 1 tsp soy sauce
+- 1 tsp miso paste
+- 1 tbsp water
+
 ## Directions
 
 Combine all “Sauce” ingredients in a blender until smooth.
