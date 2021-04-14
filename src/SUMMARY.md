@@ -14,6 +14,7 @@
   - [Feta Cheese And Tomato Pasta](./feta_cheese_and_tomato_pasta.md)
   - [Goulash](./goulash.md)
   - [Horchata](./horchata.md)
+  - [Indian Spinach Fritters](./indian_spinach_fritters.md)
   - [Lo Mein with Soba Noodles](./lo_mein_with_soba_noodles.md)
   - [Margarita](./margarita.md)
   - [Mexican Pasta](./mexican_pasta.md)
