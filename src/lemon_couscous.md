@@ -6,13 +6,14 @@
 
 ## Ingredients
 
-- Extra virgin olive oil
-- Garlic
-- Vegetable stock
-- Lemon zest
+- 2 Tbsp extra virgin olive oil
+- 1 &#189; tsp minced garlic (1 large clove)
+- 1 &#188; cups low-sodium chicken broth (or vegetable broth)
+- 1 tsp lemon zest
+- 2 Tbsp fresh lemon juice
 - Salt
-- Parsley
-- Whole-wheat Couscous
+- 2 Tbsp chopped fresh parsley
+- 6oz couscous
 
 ## Directions
 
