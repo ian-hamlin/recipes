@@ -15,6 +15,7 @@
   - [Goulash](./goulash.md)
   - [Horchata](./horchata.md)
   - [Indian Spinach Fritters](./indian_spinach_fritters.md)
+  - [Jackfruit Tagine](./jackfruit_tagine.md)
   - [Lemon Couscous](./lemon_couscous.md)
   - [Lo Mein with Soba Noodles](./lo_mein_with_soba_noodles.md)
   - [Margarita](./margarita.md)
