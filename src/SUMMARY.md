@@ -20,6 +20,7 @@
   - [Lo Mein with Soba Noodles](./lo_mein_with_soba_noodles.md)
   - [Margarita](./margarita.md)
   - [Mexican Pasta](./mexican_pasta.md)
+  - [Minnesota Winter Chili](./minnesota_winter_chili.md)
   - [Mushroom Stroganoff](./mushroom_stroganoff.md)
   - [Nandos Macho Peas](./nandos_macho_peas.md)
   - [Nandos Spicy Rice](./nandos_spicy_rice.md)
