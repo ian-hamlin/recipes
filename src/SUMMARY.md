@@ -6,6 +6,7 @@
   - ["Beef" Wellington](./beef_wellington.md)
   - [Black Bean Plantain Chilli](./black_bean_plantain_chilli.md)
   - [Blueberry & coconut smoothie](./blueberry_and_coconut_smoothie.md)
+  - [Carrot Cake Quinoa Truffles](./carrot_cake_quinoa_truffles.md)
   - [Coconut Cake](./coconut_cake.md)
   - [Crunchy Kale Crisps](./crunchy_kale_crisps.md)
   - [Egyptian Lentil Soup](./egyptian_lentil_soup.md)
