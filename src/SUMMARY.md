@@ -13,6 +13,7 @@
   - [Empanadas](./empanadas.md)
   - [Ethiopian Wild Rice Pilaf](./ethiopian_wild_rice_pilaf.md)
   - [Feta Cheese And Tomato Pasta](./feta_cheese_and_tomato_pasta.md)
+  - [French Onion Soup](./french_onion_soup.md)
   - [Goulash](./goulash.md)
   - [Horchata](./horchata.md)
   - [Indian Spinach Fritters](./indian_spinach_fritters.md)
