@@ -18,6 +18,7 @@
   - [Horchata](./horchata.md)
   - [Indian Spinach Fritters](./indian_spinach_fritters.md)
   - [Jackfruit Tagine](./jackfruit_tagine.md)
+  - [Kongjorim](./kongjorim.md)
   - [Lemon Couscous](./lemon_couscous.md)
   - [Lo Mein with Soba Noodles](./lo_mein_with_soba_noodles.md)
   - [Margarita](./margarita.md)
@@ -28,4 +29,5 @@
   - [Nandos Spicy Rice](./nandos_spicy_rice.md)
   - [Roasted Balsamic Brussels Sprouts](./roasted_brussels_sprouts.md)
   - [Sushi Rice](./sushi_rice.md)
+  - [Tahini + Miso dressing](./tahini_and_miso_dressing.md)
   - [Vegetable Vietnamese Spring Rolls](./vegetable_vietnamese_spring_rolls.md)
