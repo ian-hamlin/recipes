@@ -1,5 +1,9 @@
 # Margarita
 
+## Notes
+
+> Makes 1 serving
+
 ## Ingredients
 
 - 50ml tequila

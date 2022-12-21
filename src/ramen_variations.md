@@ -1,16 +1,12 @@
 # Ramen Variations
 
-## Tantanmen
-
-### Ingredients
+## Tantanmen Ingredients
 
 - 1 tablespoon peanut butter
 - 1 tablespoon of Gochujang
 - Sprouted beans
 
-## Bibim Ramyun
-
-### Ingredients
+## Bibim Ramyun Ingredients
 
 - 1 tablespoon brown sugar
 - 1 tablespoon Gochujang
@@ -24,9 +20,7 @@
 
 Cook noodles for 4 minutes, rinse in cold water. Add to sauce, add veg on top
 
-## Mayo Ramyun
-
-### Ingredients
+## Mayo Ramyun Ingredients
 
 - 1 teaspoon oyster sauce
 - 1 tablespoon unsalted butter
