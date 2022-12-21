@@ -5,13 +5,13 @@
 ### Caramel
 
 - 64 g coconut sugar
-- 1/4 tsp sea salt
-- 1/2 tsp vanilla extract
+- &#188; tsp sea salt
+- &#189; tsp vanilla extract
 - 15 ml water
 
 ### Custard
 
-- 1/4 tsp sea salt
+- &#188; tsp sea salt
 - 14 g cornstarch or arrowroot starch
 - 1 tsp agar agar powder (not flakes)
 - 80 ml maple syrup
