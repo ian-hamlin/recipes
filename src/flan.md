@@ -4,10 +4,10 @@
 
 ### Caramel
 
-- 64 g coconut sugar
-- &#188; tsp sea salt
-- &#189; tsp vanilla extract
-- 15 ml water
+- 128 g coconut sugar
+- &#189; tsp sea salt
+- tsp vanilla extract
+- 30 ml water
 
 ### Custard
 
