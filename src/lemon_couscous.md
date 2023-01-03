@@ -13,7 +13,7 @@
 - 2 Tbsp fresh lemon juice
 - Salt
 - 2 Tbsp chopped fresh parsley
-- 6oz couscous
+- 170 gr couscous
 
 ## Directions
 
