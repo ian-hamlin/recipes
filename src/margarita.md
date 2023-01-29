@@ -6,8 +6,8 @@
 
 ## Ingredients
 
-- 50ml tequila
-- 25ml triple sec
-- 25ml agave nectar
-- 75ml lime juice (from half a lime)
+- 42ml tequila
+- 28ml lime juice (from half a lime)
+- 28ml triple sec
+- 14ml agave nectar
 - Salt for rim
