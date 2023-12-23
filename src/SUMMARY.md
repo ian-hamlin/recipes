@@ -22,6 +22,7 @@
   - [Jackfruit Tagine](./jackfruit_tagine.md)
   - [Kongjorim](./kongjorim.md)
   - [Lemon Couscous](./lemon_couscous.md)
+  - [Lemon Curd](./lemon_curd.md)
   - [Lo Mein with Soba Noodles](./lo_mein_with_soba_noodles.md)
   - [Margarita](./margarita.md)
   - [Mexican Pasta](./mexican_pasta.md)

@@ -1,42 +1,28 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Recipes</title>
-        
-        <meta name="robots" content="noindex" />
-        
-        
+        <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
         
-
-
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="A collection of recipes">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        
         <link rel="stylesheet" href="css/print.css" media="print">
-        
 
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
 
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
@@ -44,19 +30,18 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
 
-        
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -72,79 +57,104 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
 
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="recipes.html">Recipes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="banana_bread.html">Banana Bread</a></li><li class="chapter-item expanded "><a href="bean_mix.html">Bean Mix</a></li><li class="chapter-item expanded "><a href="beef_wellington.html">&quot;Beef&quot; Wellington</a></li><li class="chapter-item expanded "><a href="black_bean_plantain_chilli.html">Black Bean Plantain Chilli</a></li><li class="chapter-item expanded "><a href="blueberry_and_coconut_smoothie.html">Blueberry &amp; coconut smoothie</a></li><li class="chapter-item expanded "><a href="cantuccini.html">Cantuccini</a></li><li class="chapter-item expanded "><a href="carrot_cake_quinoa_truffles.html">Carrot Cake Quinoa Truffles</a></li><li class="chapter-item expanded "><a href="coconut_cake.html">Coconut Cake</a></li><li class="chapter-item expanded "><a href="crunchy_kale_crisps.html">Crunchy Kale Crisps</a></li><li class="chapter-item expanded "><a href="egyptian_lentil_soup.html">Egyptian Lentil Soup</a></li><li class="chapter-item expanded "><a href="empanadas.html">Empanadas</a></li><li class="chapter-item expanded "><a href="ethiopian_wild_rice_pilaf.html">Ethiopian Wild Rice Pilaf</a></li><li class="chapter-item expanded "><a href="feta_cheese_and_tomato_pasta.html">Feta Cheese And Tomato Pasta</a></li><li class="chapter-item expanded "><a href="flan.html">Flan (No bake)</a></li><li class="chapter-item expanded "><a href="french_onion_soup.html">French Onion Soup</a></li><li class="chapter-item expanded "><a href="goulash.html">Goulash</a></li><li class="chapter-item expanded "><a href="horchata.html">Horchata</a></li><li class="chapter-item expanded "><a href="indian_spinach_fritters.html">Indian Spinach Fritters</a></li><li class="chapter-item expanded "><a href="jackfruit_tagine.html">Jackfruit Tagine</a></li><li class="chapter-item expanded "><a href="kongjorim.html">Kongjorim</a></li><li class="chapter-item expanded "><a href="lemon_couscous.html">Lemon Couscous</a></li><li class="chapter-item expanded "><a href="lo_mein_with_soba_noodles.html">Lo Mein with Soba Noodles</a></li><li class="chapter-item expanded "><a href="margarita.html">Margarita</a></li><li class="chapter-item expanded "><a href="mexican_pasta.html">Mexican Pasta</a></li><li class="chapter-item expanded "><a href="minnesota_winter_chili.html">Minnesota Winter Chili</a></li><li class="chapter-item expanded "><a href="mushroom_stroganoff.html">Mushroom Stroganoff</a></li><li class="chapter-item expanded "><a href="nandos_macho_peas.html">Nandos Macho Peas</a></li><li class="chapter-item expanded "><a href="nandos_spicy_rice.html">Nandos Spicy Rice</a></li><li class="chapter-item expanded "><a href="ramen_variations.html">Ramen Variations</a></li><li class="chapter-item expanded "><a href="rossejat.html">Rossejat</a></li><li class="chapter-item expanded "><a href="roasted_brussels_sprouts.html">Roasted Balsamic Brussels Sprouts</a></li><li class="chapter-item expanded "><a href="sushi_rice.html">Sushi Rice</a></li><li class="chapter-item expanded "><a href="tahini_and_miso_dressing.html">Tahini + Miso dressing</a></li><li class="chapter-item expanded "><a href="vegetable_vietnamese_spring_rolls.html">Vegetable Vietnamese Spring Rolls</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="recipes.html">Recipes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="banana_bread.html">Banana Bread</a></li><li class="chapter-item expanded "><a href="bean_mix.html">Bean Mix</a></li><li class="chapter-item expanded "><a href="beef_wellington.html">"Beef" Wellington</a></li><li class="chapter-item expanded "><a href="black_bean_plantain_chilli.html">Black Bean Plantain Chilli</a></li><li class="chapter-item expanded "><a href="blueberry_and_coconut_smoothie.html">Blueberry & coconut smoothie</a></li><li class="chapter-item expanded "><a href="cantuccini.html">Cantuccini</a></li><li class="chapter-item expanded "><a href="carrot_cake_quinoa_truffles.html">Carrot Cake Quinoa Truffles</a></li><li class="chapter-item expanded "><a href="coconut_cake.html">Coconut Cake</a></li><li class="chapter-item expanded "><a href="crunchy_kale_crisps.html">Crunchy Kale Crisps</a></li><li class="chapter-item expanded "><a href="egyptian_lentil_soup.html">Egyptian Lentil Soup</a></li><li class="chapter-item expanded "><a href="empanadas.html">Empanadas</a></li><li class="chapter-item expanded "><a href="ethiopian_wild_rice_pilaf.html">Ethiopian Wild Rice Pilaf</a></li><li class="chapter-item expanded "><a href="feta_cheese_and_tomato_pasta.html">Feta Cheese And Tomato Pasta</a></li><li class="chapter-item expanded "><a href="flan.html">Flan (No bake)</a></li><li class="chapter-item expanded "><a href="french_onion_soup.html">French Onion Soup</a></li><li class="chapter-item expanded "><a href="goulash.html">Goulash</a></li><li class="chapter-item expanded "><a href="horchata.html">Horchata</a></li><li class="chapter-item expanded "><a href="indian_spinach_fritters.html">Indian Spinach Fritters</a></li><li class="chapter-item expanded "><a href="jackfruit_tagine.html">Jackfruit Tagine</a></li><li class="chapter-item expanded "><a href="kongjorim.html">Kongjorim</a></li><li class="chapter-item expanded "><a href="lemon_couscous.html">Lemon Couscous</a></li><li class="chapter-item expanded "><a href="lemon_curd.html">Lemon Curd</a></li><li class="chapter-item expanded "><a href="lo_mein_with_soba_noodles.html">Lo Mein with Soba Noodles</a></li><li class="chapter-item expanded "><a href="margarita.html">Margarita</a></li><li class="chapter-item expanded "><a href="mexican_pasta.html">Mexican Pasta</a></li><li class="chapter-item expanded "><a href="minnesota_winter_chili.html">Minnesota Winter Chili</a></li><li class="chapter-item expanded "><a href="mushroom_stroganoff.html">Mushroom Stroganoff</a></li><li class="chapter-item expanded "><a href="nandos_macho_peas.html">Nandos Macho Peas</a></li><li class="chapter-item expanded "><a href="nandos_spicy_rice.html">Nandos Spicy Rice</a></li><li class="chapter-item expanded "><a href="ramen_variations.html">Ramen Variations</a></li><li class="chapter-item expanded "><a href="rossejat.html">Rossejat</a></li><li class="chapter-item expanded "><a href="roasted_brussels_sprouts.html">Roasted Balsamic Brussels Sprouts</a></li><li class="chapter-item expanded "><a href="sushi_rice.html">Sushi Rice</a></li><li class="chapter-item expanded "><a href="tahini_and_miso_dressing.html">Tahini + Miso dressing</a></li><li class="chapter-item expanded "><a href="vegetable_vietnamese_spring_rolls.html">Vegetable Vietnamese Spring Rolls</a></li></ol></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Recipes</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
+
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -152,10 +162,9 @@
                         </ul>
                     </div>
                 </div>
-                
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -165,7 +174,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#recipes" id="recipes">Recipes</a></h1>
+                        <h1 id="recipes"><a class="header" href="#recipes">Recipes</a></h1>
 <p>A collection of recipes. Based on ingredients easily found in UK stores.</p>
 <!-- - [Banana Bread](banana_bread.html)
 - [Bean Mix](bean_mix.html)
@@ -173,9 +182,9 @@
 - [Horchata](horchata.html)
 - [Mexican Pasta](mexican_pasta.html)
 - [Mushroom Stroganoff](mushroom_stroganoff.html) -->
-<h1><a class="header" href="#banana-bread" id="banana-bread">Banana Bread</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="banana-bread"><a class="header" href="#banana-bread">Banana Bread</a></h1>
 <p><img src="/recipes/content/images/banana_bread.jpeg" alt="Banana Bread" /></p>
-<h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
+<h2 id="ingredients"><a class="header" href="#ingredients">Ingredients</a></h2>
 <ul>
 <li>3 medium overripe bananas</li>
 <li>70g granulated sugar</li>
@@ -189,7 +198,7 @@
 <li>100g chopped walnuts (or pecans, or chocolate chips)</li>
 <li>brown sugar to sprinkle on top</li>
 </ul>
-<h2><a class="header" href="#directions" id="directions">Directions</a></h2>
+<h2 id="directions"><a class="header" href="#directions">Directions</a></h2>
 <p>Preheat the oven to 180℃.</p>
 <p>Lightly oil a 9-inch loaf pan and arrange a strip of parchment paper width-wise along the center, with just a bit hanging out over each side.</p>
 <p>Peel the bananas and place them into a large mixing bowl. Mash them well with a fork or potato masher.</p>
@@ -201,12 +210,12 @@
 <p>Sprinkle the top with brown sugar.</p>
 <p>Bake for 50 minutes, or until a toothpick inserted into the center comes out clean.</p>
 <p>Remove the pan from the oven and transfer it to a cooling rack.</p>
-<h1><a class="header" href="#bean-mix" id="bean-mix">Bean Mix</a></h1>
-<h2><a class="header" href="#notes" id="notes">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bean-mix"><a class="header" href="#bean-mix">Bean Mix</a></h1>
+<h2 id="notes"><a class="header" href="#notes">Notes</a></h2>
 <blockquote>
 <p>Makes 6 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-1" id="ingredients-1">Ingredients</a></h2>
+<h2 id="ingredients-1"><a class="header" href="#ingredients-1">Ingredients</a></h2>
 <ul>
 <li>1 tin Heinz Beans (no added sugar)</li>
 <li>1 tin Red Kidney Beans (in water)</li>
@@ -215,22 +224,22 @@
 <li>1 pack Old El Paso Chilli Seasoning Mix</li>
 <li>Sweet Chilli Tortilla Wraps</li>
 </ul>
-<h2><a class="header" href="#optional-ingredients" id="optional-ingredients">Optional Ingredients</a></h2>
+<h2 id="optional-ingredients"><a class="header" href="#optional-ingredients">Optional Ingredients</a></h2>
 <ul>
 <li>Avocado</li>
 <li>Smoked Applewood cheese</li>
 <li>Lettuce</li>
 <li>Crème Fraîche</li>
 </ul>
-<h2><a class="header" href="#directions-1" id="directions-1">Directions</a></h2>
+<h2 id="directions-1"><a class="header" href="#directions-1">Directions</a></h2>
 <p>Wash all the horrible sauce from the Heinz Beans, wash the other beans.</p>
 <p>Put the beans, peas and Chilli Seasoning into a pan and heat over a medium flame for 10 mins.</p>
-<h2><a class="header" href="#serve" id="serve">Serve</a></h2>
+<h2 id="serve"><a class="header" href="#serve">Serve</a></h2>
 <ul>
 <li>In wraps with avocado, cheese, lettuce and a dollop of crème fraîche</li>
 </ul>
-<h1><a class="header" href="#beef-wellington" id="beef-wellington">&quot;Beef&quot; Wellington</a></h1>
-<h2><a class="header" href="#ingredients-2" id="ingredients-2">Ingredients</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="beef-wellington"><a class="header" href="#beef-wellington">&quot;Beef&quot; Wellington</a></h1>
+<h2 id="ingredients-2"><a class="header" href="#ingredients-2">Ingredients</a></h2>
 <ul>
 <li>2 packs of beyond meat (other other burger)</li>
 <li>Sea salt and freshly ground black pepper</li>
@@ -243,7 +252,7 @@
 <li>Plain flour, to dust</li>
 <li>Hazelnut milk, to brush</li>
 </ul>
-<h2><a class="header" href="#directions-2" id="directions-2">Directions</a></h2>
+<h2 id="directions-2"><a class="header" href="#directions-2">Directions</a></h2>
 <p>Preheat oven to 195°C</p>
 <p>Merge the vegan burger patties into a thick sausage shape to make a fillet, wrap in cling film and place in the fridge to firm up.</p>
 <p>For the duxelles, put all the ingredients (mushrooms, chestnuts, garlic and a pinch of salt) into a food processor and blend to a paste. Heat a large dry frying pan, add the mushroom paste and a few thyme leaves. Cook over a high heat, stirring every now and then. The paste needs to dried out otherwise the pastry gets soggy. Spread the mushroom paste out on a plate and cool. 4.</p>
@@ -251,13 +260,13 @@
 <p>Roll out a large piece of cling film and spread the mushroom mix on top. Lay the fillet at the edge of the mushroom layer. Tightly roll over the fillet into a sausage shape. Twist the ends of the cling film so it holds tightly together, then refrigerate for 15 minutes to firm up.</p>
 <p>Roll out the pastry on a floured surface into a large rectangle, roughly the thickness of a £1 coin. Unwrap the fillet from the cling film and place on the edge of the pastry. Make sure you have a large enough rectangle to wrap the fillet up and trim off the excess pastry. Roll the pastry around the fillet and then press the edges to seal. Pinch the pastry at the ends to seal and trim off any excess. Wrap the wellington tightly in cling film and chill for another 10 minutes, or overnight if you’re super organised!</p>
 <p>Remove the cling film and decorate the pastry with the off-cuts if you like. Glaze the wellington all over with hazelnut milk. Place on a baking tray, bake for about 45 minutes, serve with sides of roast veggies and delicious gravy.</p>
-<h1><a class="header" href="#black-bean-plantain-chilli" id="black-bean-plantain-chilli">Black Bean Plantain Chilli</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="black-bean-plantain-chilli"><a class="header" href="#black-bean-plantain-chilli">Black Bean Plantain Chilli</a></h1>
 <p><img src="/recipes/content/images/black_bean_plantain_chilli.jpeg" alt="Black Bean Plantain Chilli" /></p>
-<h2><a class="header" href="#notes-1" id="notes-1">Notes</a></h2>
+<h2 id="notes-1"><a class="header" href="#notes-1">Notes</a></h2>
 <blockquote>
 <p>Makes 4 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-3" id="ingredients-3">Ingredients</a></h2>
+<h2 id="ingredients-3"><a class="header" href="#ingredients-3">Ingredients</a></h2>
 <ul>
 <li>1 tbsp vegetable oil</li>
 <li>1 onion - diced</li>
@@ -272,32 +281,32 @@
 <li>2 ripe plantains, yellow with plenty of brown spots, peeled and cut into 1 inch chunks</li>
 <li>Salt and Pepper</li>
 </ul>
-<h2><a class="header" href="#optional-ingredients-1" id="optional-ingredients-1">Optional Ingredients</a></h2>
+<h2 id="optional-ingredients-1"><a class="header" href="#optional-ingredients-1">Optional Ingredients</a></h2>
 <ul>
 <li>Avocado to serve</li>
 </ul>
-<h2><a class="header" href="#directions-3" id="directions-3">Directions</a></h2>
+<h2 id="directions-3"><a class="header" href="#directions-3">Directions</a></h2>
 <p>Coat the bottom of a large pot with oil and place over medium heat. When oil is hot, add onion and bell pepper. Sauté until softened and onions are translucent, about 5 minutes. Add garlic and sauté about 1 minute more, until very fragrant.</p>
 <p>Add beans, crushed tomatoes, diced tomatoes, chili powder, cumin, paprika and ancho chili powder to the pot and give it a stir to incorporate everything. Bring to a simmer.
 Lower heat and allow to simmer, stirring occasionally, for 15 minutes. Add plantains and simmer 10 minutes more, stirring occasionally, until plantains are softened but not yet mushy.</p>
 <p>Remove from heat and season with salt and pepper to taste. Divide into bowls and top with toppings of choice. Serve.</p>
-<h1><a class="header" href="#blueberry--coconut-smoothie" id="blueberry--coconut-smoothie">Blueberry &amp; coconut smoothie</a></h1>
-<h2><a class="header" href="#notes-2" id="notes-2">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="blueberry--coconut-smoothie"><a class="header" href="#blueberry--coconut-smoothie">Blueberry &amp; coconut smoothie</a></h1>
+<h2 id="notes-2"><a class="header" href="#notes-2">Notes</a></h2>
 <blockquote>
 <p>Makes 2 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-4" id="ingredients-4">Ingredients</a></h2>
+<h2 id="ingredients-4"><a class="header" href="#ingredients-4">Ingredients</a></h2>
 <ul>
 <li>250g blueberries (Frozen or add ice cubes)</li>
 <li>400ml coconut milk</li>
 <li>2 tbsp maple syrup</li>
 <li>1 tsp vanilla extract</li>
 </ul>
-<h2><a class="header" href="#directions-4" id="directions-4">Directions</a></h2>
+<h2 id="directions-4"><a class="header" href="#directions-4">Directions</a></h2>
 <p>Place everything in a food processor and blend it.</p>
-<h1><a class="header" href="#cantuccini" id="cantuccini">Cantuccini</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="cantuccini"><a class="header" href="#cantuccini">Cantuccini</a></h1>
 <p><img src="/recipes/content/images/cantuccini.jpeg" alt="Cantuccini" /></p>
-<h2><a class="header" href="#ingredients-5" id="ingredients-5">Ingredients</a></h2>
+<h2 id="ingredients-5"><a class="header" href="#ingredients-5">Ingredients</a></h2>
 <ul>
 <li>Self raising flour 250 gr</li>
 <li>sugar 150gr</li>
@@ -308,15 +317,15 @@ Lower heat and allow to simmer, stirring occasionally, for 15 minutes. Add plant
 <li>pinch of vanilla beans or powder</li>
 <li>almonds 250gr</li>
 </ul>
-<h2><a class="header" href="#directions-5" id="directions-5">Directions</a></h2>
+<h2 id="directions-5"><a class="header" href="#directions-5">Directions</a></h2>
 <p>Mix all the dry ingredients, add the liquids when you have a good consistence (not too soft) add the almonds make small sausages as in the pictures (1-1,5cm diameter, remember they will raise so the smaller the better) put them on parchment paper with proper distance in a ventilated oven 140°C  for 30 mins.</p>
 <p>Wait 5 mins when out of the oven before cutting them in slices of 2 cms</p>
-<h1><a class="header" href="#carrot-cake-quinoa-truffles" id="carrot-cake-quinoa-truffles">Carrot Cake Quinoa Truffles</a></h1>
-<h2><a class="header" href="#notes-3" id="notes-3">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="carrot-cake-quinoa-truffles"><a class="header" href="#carrot-cake-quinoa-truffles">Carrot Cake Quinoa Truffles</a></h1>
+<h2 id="notes-3"><a class="header" href="#notes-3">Notes</a></h2>
 <blockquote>
 <p>Makes 8</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-6" id="ingredients-6">Ingredients</a></h2>
+<h2 id="ingredients-6"><a class="header" href="#ingredients-6">Ingredients</a></h2>
 <ul>
 <li>1 carrot peeled and grated</li>
 <li>20g puffed quinoa</li>
@@ -325,10 +334,10 @@ Lower heat and allow to simmer, stirring occasionally, for 15 minutes. Add plant
 <li>½ teaspoon ground cinnamon</li>
 <li>⅛ teaspoon ground ginger</li>
 </ul>
-<h2><a class="header" href="#directions-6" id="directions-6">Directions</a></h2>
+<h2 id="directions-6"><a class="header" href="#directions-6">Directions</a></h2>
 <p>Mix all ingredients together well. Roll into balls and store in the fridge until ready to eat.</p>
-<h1><a class="header" href="#coconut-cake" id="coconut-cake">Coconut Cake</a></h1>
-<h2><a class="header" href="#ingredients-7" id="ingredients-7">Ingredients</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="coconut-cake"><a class="header" href="#coconut-cake">Coconut Cake</a></h1>
+<h2 id="ingredients-7"><a class="header" href="#ingredients-7">Ingredients</a></h2>
 <ul>
 <li>200 g Sugar</li>
 <li>118 Cup Oil</li>
@@ -339,31 +348,31 @@ Lower heat and allow to simmer, stirring occasionally, for 15 minutes. Add plant
 <li>180 g all Purpose Flour</li>
 <li>2 Teaspoon Baking powder</li>
 </ul>
-<h2><a class="header" href="#directions-7" id="directions-7">Directions</a></h2>
+<h2 id="directions-7"><a class="header" href="#directions-7">Directions</a></h2>
 <p>Preheat the oven to 180°C</p>
 <p>In a mixing bowl, add oil and sugar. Give it a quick whisk.</p>
 <p>Add desiccated coconut, coconut milk and coconut extract. Give this a whisk with the help of a hand whisk until just combined. Now add vinegar and mix well.</p>
 <p>Put a sieve on top of the mixing bowl. Add all purpose flour and baking powder. Sieve both the dry ingredients. Mix with the help of a spatula until just combined. Don't over-mix the cake batter.</p>
 <p>Pour the cake batter into a greased cake tin.</p>
 <p>Bake at 180 degree Centigrade 35-40 minutes or till a toothpick inserted into the center of the cake comes out clean.</p>
-<h1><a class="header" href="#crunchy-kale-crisps" id="crunchy-kale-crisps">Crunchy Kale Crisps</a></h1>
-<h2><a class="header" href="#ingredients-8" id="ingredients-8">Ingredients</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="crunchy-kale-crisps"><a class="header" href="#crunchy-kale-crisps">Crunchy Kale Crisps</a></h1>
+<h2 id="ingredients-8"><a class="header" href="#ingredients-8">Ingredients</a></h2>
 <ul>
 <li>200g kale, thick stems removed</li>
 <li>½ tsp extra-virgin olive oil</li>
 <li>Sea salt</li>
 </ul>
-<h2><a class="header" href="#directions-8" id="directions-8">Directions</a></h2>
+<h2 id="directions-8"><a class="header" href="#directions-8">Directions</a></h2>
 <p>Preheat the oven to 140°C.</p>
 <p>Tear the kale into similar-sized pieces and toss together with the olive oil until well coated. Spread out over a baking tray, making sure the leaves aren’t touching each other. Cook for 15 mins, then turn and cook for a further 15 mins until crisp.</p>
 <p>Remove from the oven and scatter with a little sea salt.</p>
-<h1><a class="header" href="#egyptian-lentil-soup" id="egyptian-lentil-soup">Egyptian Lentil Soup</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="egyptian-lentil-soup"><a class="header" href="#egyptian-lentil-soup">Egyptian Lentil Soup</a></h1>
 <p><img src="/recipes/content/images/egyptian_lentil_soup.jpeg" alt="Egyptian Lentil Soup" /></p>
-<h2><a class="header" href="#notes-4" id="notes-4">Notes</a></h2>
+<h2 id="notes-4"><a class="header" href="#notes-4">Notes</a></h2>
 <blockquote>
 <p>Makes 3 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-9" id="ingredients-9">Ingredients</a></h2>
+<h2 id="ingredients-9"><a class="header" href="#ingredients-9">Ingredients</a></h2>
 <ul>
 <li>200g lentils, washed under running cold water.</li>
 <li>1 celery stalk diced.</li>
@@ -375,26 +384,26 @@ Lower heat and allow to simmer, stirring occasionally, for 15 minutes. Add plant
 <li>1 teaspoon ground cumin.</li>
 <li>½ teaspoon ground black pepper.</li>
 </ul>
-<h2><a class="header" href="#optional-ingredients-2" id="optional-ingredients-2">Optional Ingredients</a></h2>
+<h2 id="optional-ingredients-2"><a class="header" href="#optional-ingredients-2">Optional Ingredients</a></h2>
 <ul>
 <li>Ritz Crackers</li>
 <li>Lime</li>
 </ul>
-<h2><a class="header" href="#directions-9" id="directions-9">Directions</a></h2>
+<h2 id="directions-9"><a class="header" href="#directions-9">Directions</a></h2>
 <p>In a deep pot mix in lentils and all the vegetables. Add 1 liter of stock then bring to a boil over medium high heat.</p>
 <p>Partially cover the pot and reduce heat to medium. Cook for 20 minutes or until everything is cooked.</p>
 <p>Blend to your preferred consistency. Add spices and mix well. Check to adjust seasonings.</p>
 <p>Check for consistency, if thick for your liking add water</p>
-<h2><a class="header" href="#serve-1" id="serve-1">Serve</a></h2>
+<h2 id="serve-1"><a class="header" href="#serve-1">Serve</a></h2>
 <ul>
 <li>Squeeze of lime juice and a portion of Ritz Crackers</li>
 </ul>
-<h1><a class="header" href="#empanadas" id="empanadas">Empanadas</a></h1>
-<h2><a class="header" href="#notes-5" id="notes-5">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="empanadas"><a class="header" href="#empanadas">Empanadas</a></h1>
+<h2 id="notes-5"><a class="header" href="#notes-5">Notes</a></h2>
 <blockquote>
 <p>Makes 12 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-10" id="ingredients-10">Ingredients</a></h2>
+<h2 id="ingredients-10"><a class="header" href="#ingredients-10">Ingredients</a></h2>
 <ul>
 <li>Vegetable oil</li>
 <li>½ onion</li>
@@ -410,23 +419,23 @@ Lower heat and allow to simmer, stirring occasionally, for 15 minutes. Add plant
 <li>Pitted olives</li>
 <li>12 <a href="https://www.casaargentina.co.uk/deli/frozen-foods/casa-argentina-tapas-de-empanadas-criolla-vegana-empanada-disc-criolla-style-vegan-medium-size-12x330g-12cm-815.html">Empanada discs</a></li>
 </ul>
-<h2><a class="header" href="#optional-ingredients-3" id="optional-ingredients-3">Optional Ingredients</a></h2>
+<h2 id="optional-ingredients-3"><a class="header" href="#optional-ingredients-3">Optional Ingredients</a></h2>
 <ul>
 <li>Ketchup and mustard for glazing</li>
 </ul>
-<h2><a class="header" href="#directions-10" id="directions-10">Directions</a></h2>
+<h2 id="directions-10"><a class="header" href="#directions-10">Directions</a></h2>
 <p>In a large pan over medium heat, add 2 tablespoons of vegetable oil and cook the chopped tempeh, onion, minced garlic and cumin for 5-8 minutes or until fragrant and translucent.</p>
 <p>Add chopped pepper, diced potato, and spices and cook until pepper and potato are soft. Remove from heat and allow to cool a bit while before assembling the empanadas.</p>
 <p>Add chopped olives when assembling.</p>
 <p>Cook at 180 degrees for 30 minutes.</p>
 <p>Brush with a mix of ketchup, mustard and water.</p>
-<h1><a class="header" href="#ethiopian-wild-rice-pilaf" id="ethiopian-wild-rice-pilaf">Ethiopian Wild Rice Pilaf</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ethiopian-wild-rice-pilaf"><a class="header" href="#ethiopian-wild-rice-pilaf">Ethiopian Wild Rice Pilaf</a></h1>
 <p><img src="/recipes/content/images/ethiopian_wild_rice_pilaf.jpeg" alt="Ethiopian Wild Rice Pilaf" /></p>
-<h2><a class="header" href="#notes-6" id="notes-6">Notes</a></h2>
+<h2 id="notes-6"><a class="header" href="#notes-6">Notes</a></h2>
 <blockquote>
 <p>Makes 4 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-11" id="ingredients-11">Ingredients</a></h2>
+<h2 id="ingredients-11"><a class="header" href="#ingredients-11">Ingredients</a></h2>
 <ul>
 <li>2 medium leeks (white and light green parts), diced and rinsed</li>
 <li>2 cloves garlic, peeled and minced</li>
@@ -437,16 +446,16 @@ Lower heat and allow to simmer, stirring occasionally, for 15 minutes. Add plant
 <li>Salt and freshly ground black pepper to taste</li>
 <li>4 green onions (white and green parts), thinly sliced</li>
 </ul>
-<h2><a class="header" href="#directions-11" id="directions-11">Directions</a></h2>
+<h2 id="directions-11"><a class="header" href="#directions-11">Directions</a></h2>
 <p>Place the leeks in a large saucepan, and sauté over medium heat for 10 minutes. Add water 1 to 2 tablespoons at a time to keep the leeks from sticking to the pan.</p>
 <p>Add the garlic and cook for 2 minutes. Add the berbere spice and cook for 30 seconds. Stir in the wild rice, beans, and orange zest, and season with salt and pepper. Cook until the mixture is heated through.</p>
 <p>Garnish with the green onions.</p>
-<h1><a class="header" href="#feta-cheese-and-tomato-pasta" id="feta-cheese-and-tomato-pasta">Feta Cheese And Tomato Pasta</a></h1>
-<h2><a class="header" href="#notes-7" id="notes-7">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="feta-cheese-and-tomato-pasta"><a class="header" href="#feta-cheese-and-tomato-pasta">Feta Cheese And Tomato Pasta</a></h1>
+<h2 id="notes-7"><a class="header" href="#notes-7">Notes</a></h2>
 <blockquote>
 <p>Makes 2 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-12" id="ingredients-12">Ingredients</a></h2>
+<h2 id="ingredients-12"><a class="header" href="#ingredients-12">Ingredients</a></h2>
 <ul>
 <li>Half a block of vegan feta</li>
 <li>1 pack of cherry tomatoes</li>
@@ -457,7 +466,7 @@ Lower heat and allow to simmer, stirring occasionally, for 15 minutes. Add plant
 <li>4 cloves of garlic</li>
 <li>Macaroni shaped pasta – 200g</li>
 </ul>
-<h2><a class="header" href="#directions-12" id="directions-12">Directions</a></h2>
+<h2 id="directions-12"><a class="header" href="#directions-12">Directions</a></h2>
 <p>Preheat oven to 210 C</p>
 <p>Place cherry tomatoes on oven proof dish. Drizzle with olive oil, season with salt and pepper. Mix.</p>
 <p>Add Feta cheese on top. Drizzle more olive oil, add a dash of pepper and dried oregano</p>
@@ -466,16 +475,16 @@ Lower heat and allow to simmer, stirring occasionally, for 15 minutes. Add plant
 <p>After 20 minutes, start cooking the pasta.</p>
 <p>Drain the pasta, mix with chopped garlic and basil, and add the tomatoes/feta.</p>
 <p>Mix well and serve</p>
-<h1><a class="header" href="#flan-no-bake" id="flan-no-bake">Flan (No bake)</a></h1>
-<h2><a class="header" href="#ingredients-13" id="ingredients-13">Ingredients</a></h2>
-<h3><a class="header" href="#caramel" id="caramel">Caramel</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="flan-no-bake"><a class="header" href="#flan-no-bake">Flan (No bake)</a></h1>
+<h2 id="ingredients-13"><a class="header" href="#ingredients-13">Ingredients</a></h2>
+<h3 id="caramel"><a class="header" href="#caramel">Caramel</a></h3>
 <ul>
 <li>128 g coconut sugar</li>
 <li>½ tsp sea salt</li>
 <li>tsp vanilla extract</li>
 <li>30 ml water</li>
 </ul>
-<h3><a class="header" href="#custard" id="custard">Custard</a></h3>
+<h3 id="custard"><a class="header" href="#custard">Custard</a></h3>
 <ul>
 <li>¼ tsp sea salt</li>
 <li>14 g cornstarch or arrowroot starch</li>
@@ -484,7 +493,7 @@ Lower heat and allow to simmer, stirring occasionally, for 15 minutes. Add plant
 <li>4 tsp vanilla extract</li>
 <li>2 (400-ml) cans full-fat coconut milk (we like Whole Foods 365 brand)</li>
 </ul>
-<h2><a class="header" href="#directions-13" id="directions-13">Directions</a></h2>
+<h2 id="directions-13"><a class="header" href="#directions-13">Directions</a></h2>
 <p>Start by getting out 4 individual ramekins; ideally they should be 3-4 inches in diameter (at the base) and 2-3 inches deep. Place them within easy reach.</p>
 <p>Caramel: Add the coconut sugar, salt, vanilla extract, and water to a medium saucepan and turn on medium-low heat. Set a timer for 3 minutes and stir constantly while cooking – the sugar will dissolve and the mixture should start to bubble vigorously and thicken slightly. Stick with it! If it is only gently bubbling, turn up your heat very slightly. Or if it’s smelling burnt at all, turn heat down. As soon as the 3-minute timer goes off, quickly distribute the caramel between your 4 prepared ramekins (~1 heaping tablespoon per ramekin). Set aside.</p>
 <p>Custard: You can rinse the same saucepan with hot water and use it for the custard, or choose another — make sure whatever pan you choose is deep enough to hold 4 cups (950 ml) of boiling liquid.</p>
@@ -493,13 +502,13 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <p>Carefully distribute the custard between the ramekins, on top of the caramel. Let the flan cool for 5-10 minutes before transferring it to the refrigerator. Refrigerate for 3 hours, uncovered. If chilling for more than 3 hours, cover lightly with foil, leaving room for a bit of ventilation.</p>
 <p>Once set, you can eat your flan straight from the ramekins with a spoon, or carefully remove them by loosening the edges with a butter knife and turning them upside down onto a plate. You may need to shake gently and tap the bottom to help them slip out!</p>
 <p>Best enjoyed the first day, but will keep for up to 3 days lightly covered in the refrigerator. Not freezer friendly.</p>
-<h1><a class="header" href="#french-onion-soup" id="french-onion-soup">French Onion Soup</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="french-onion-soup"><a class="header" href="#french-onion-soup">French Onion Soup</a></h1>
 <p><img src="/recipes/content/images/french_onion_soup.jpeg" alt="French Onion Soup" /></p>
-<h2><a class="header" href="#notes-8" id="notes-8">Notes</a></h2>
+<h2 id="notes-8"><a class="header" href="#notes-8">Notes</a></h2>
 <blockquote>
 <p>Makes 3 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-14" id="ingredients-14">Ingredients</a></h2>
+<h2 id="ingredients-14"><a class="header" href="#ingredients-14">Ingredients</a></h2>
 <ul>
 <li>3 pounds yellow onions - about 6 onions</li>
 <li>4 tablespoons vegan butter</li>
@@ -516,7 +525,7 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>1 tablespoon olive oil</li>
 <li>vegan cheese</li>
 </ul>
-<h2><a class="header" href="#directions-14" id="directions-14">Directions</a></h2>
+<h2 id="directions-14"><a class="header" href="#directions-14">Directions</a></h2>
 <p>Peel and thinly slice the onions (about ¼ inch thick.)</p>
 <p>Melt the butter on medium-high heat. Add the onions and give them a good toss with the butter.</p>
 <p>Sauté until caramelized. Stir frequently.</p>
@@ -527,12 +536,12 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <p>In the meantime, pre-heat the grill at 280C. Brush each slice of baguette with olive oil. Place on a baking sheet and bake until brown and toasted.</p>
 <p>Ladle the soup into individual oven-safe bowls. Place a toasted baguette on top and then add vegan cheese.</p>
 <p>Broil until cheese is melty and browned, about 2-3 minutes.</p>
-<h1><a class="header" href="#goulash" id="goulash">Goulash</a></h1>
-<h2><a class="header" href="#notes-9" id="notes-9">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="goulash"><a class="header" href="#goulash">Goulash</a></h1>
+<h2 id="notes-9"><a class="header" href="#notes-9">Notes</a></h2>
 <blockquote>
 <p>Makes 4 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-15" id="ingredients-15">Ingredients</a></h2>
+<h2 id="ingredients-15"><a class="header" href="#ingredients-15">Ingredients</a></h2>
 <ul>
 <li>200g of dried soy chunks,</li>
 <li>2 carrots, thinly sliced</li>
@@ -552,16 +561,16 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>Mustard</li>
 <li>1 tin of butter beans</li>
 </ul>
-<h2><a class="header" href="#directions-15" id="directions-15">Directions</a></h2>
+<h2 id="directions-15"><a class="header" href="#directions-15">Directions</a></h2>
 <p>Wash the soy with water (very important), then soak it in boiled water for half an hour. After half an hour, squeeze the water out of the soy. Boil more water, and put the soy in a bowl and this time season them with 2 teaspoons of paprika, 1 teaspoon of salt, 1/4 teaspoon of pepper and 2 cloves of chopped garlic, they will sit in the water for 15 more minutes.</p>
 <p>In a large pour a little olive oil, 1 teaspoon of mustard, 1 teaspoon of salt, 1/4 teaspoon of black pepper, 1 teaspoon of paprika, 1 ½ teaspoon of cumin, 1 ½ teaspoon of turmeric and 2 teaspoons coriander. Add the onion and garlic and let them brown a little, then add the carrots and pepper. In a glass mix a tablespoon of tomato paste with water and add to the pot, then the chopped tomatoes. Cover with a lid and let it boil.</p>
 <p>Then add the soy chunks with the seasoned with the seasoned water to the pot, mix well and then add the potatoes. Cover with the lid and let all cook for half an hour on low heat.</p>
-<h1><a class="header" href="#horchata" id="horchata">Horchata</a></h1>
-<h2><a class="header" href="#notes-10" id="notes-10">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="horchata"><a class="header" href="#horchata">Horchata</a></h1>
+<h2 id="notes-10"><a class="header" href="#notes-10">Notes</a></h2>
 <blockquote>
 <p>Makes 6 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-16" id="ingredients-16">Ingredients</a></h2>
+<h2 id="ingredients-16"><a class="header" href="#ingredients-16">Ingredients</a></h2>
 <ul>
 <li>185g uncooked white long-grain rice</li>
 <li>1.2L water</li>
@@ -570,15 +579,15 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>½ tablespoon ground cinnamon</li>
 <li>125g caster sugar</li>
 </ul>
-<h2><a class="header" href="#directions-16" id="directions-16">Directions</a></h2>
+<h2 id="directions-16"><a class="header" href="#directions-16">Directions</a></h2>
 <p>Pour the rice and water into a blender; blend until the rice just begins to break up, about 1 minute. Let rice and water stand at room temperature for a minimum of 3 hours.</p>
 <p>Strain the rice water into a jug or pitcher and discard the rice. Stir the milk, vanilla, cinnamon and sugar into the rice water. Chill and stir before serving over ice.</p>
-<h1><a class="header" href="#horchata-1" id="horchata-1">Horchata</a></h1>
-<h2><a class="header" href="#notes-11" id="notes-11">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="horchata-1"><a class="header" href="#horchata-1">Horchata</a></h1>
+<h2 id="notes-11"><a class="header" href="#notes-11">Notes</a></h2>
 <blockquote>
 <p>Makes 2 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-17" id="ingredients-17">Ingredients</a></h2>
+<h2 id="ingredients-17"><a class="header" href="#ingredients-17">Ingredients</a></h2>
 <ul>
 <li>1 ½ Cups Chickpea Flour</li>
 <li>1 Tablespoon Ground Coriander</li>
@@ -588,18 +597,18 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>4 cups of loose Baby Spinach chopped finely</li>
 <li>1 teaspoon Sea Salt more/less to taste</li>
 </ul>
-<h2><a class="header" href="#directions-17" id="directions-17">Directions</a></h2>
+<h2 id="directions-17"><a class="header" href="#directions-17">Directions</a></h2>
 <p>Combine chickpea flour, coriander, cumin and salt in a bowl. Whisk to combine.</p>
 <p>Add chopped onion, chillies and spinach to the flour mixture, and toss to coat. You want to make sure that your spinach is chopped up into very small pieces, otherwise your fritters will be hard to handle.</p>
 <p>Gradually add your 1 cup of water in small increments to the spinach/flour mixture. Stir to combine. You may not need to use all of the water you have, or you may even need to use more.</p>
 <p>Stop adding water once you have achieved a thick batter that can be dolloped into mounds. You don't want a runny batter for these fritters.</p>
 <p>Heat a shallow layer of oil in a deep pot and fry fritters for 3 minutes per side, or till a golden brown color is achieved throughout. Drain on paper towels and enjoy!</p>
-<h1><a class="header" href="#jackfruit-tagine" id="jackfruit-tagine">Jackfruit Tagine</a></h1>
-<h2><a class="header" href="#notes-12" id="notes-12">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="jackfruit-tagine"><a class="header" href="#jackfruit-tagine">Jackfruit Tagine</a></h1>
+<h2 id="notes-12"><a class="header" href="#notes-12">Notes</a></h2>
 <blockquote>
 <p>Makes 4 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-18" id="ingredients-18">Ingredients</a></h2>
+<h2 id="ingredients-18"><a class="header" href="#ingredients-18">Ingredients</a></h2>
 <ul>
 <li>2 tbsp / 30 ml oil (I used olive oil)</li>
 <li>1 large onion, finely chopped</li>
@@ -622,7 +631,7 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>quick-pickled or preserved lemon, chopped finely</li>
 <li>toasted almond flakes, to serve</li>
 </ul>
-<h2><a class="header" href="#directions-18" id="directions-18">Directions</a></h2>
+<h2 id="directions-18"><a class="header" href="#directions-18">Directions</a></h2>
 <p>Heat up the oil in a heavy-bottomed pot.</p>
 <p>Add the diced onion and fry it off gently until almost translucent, stirring from time to time.</p>
 <p>Meanwhile, cut off the fleshy bits of the jackfruit pieces and discard together with any seeds as they aren’t very nice to eat. Squash the jackfruit pieces down with a fork so that the fibres separate and set aside.</p>
@@ -632,12 +641,12 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <p>Simmer on a low-medium heat until the tomato flesh breaks down and excess moisture evaporates, giving the pot a good stir from time to time. If the tomatoes are still chunky but the pot is starting to look a bit dry, be sure to top it up with more water. Simmer until the tomatoes are broken down and the sauce reaches the thickness you like.</p>
 <p>Add in cooked chickpeas towards the end of the simmering time.</p>
 <p>Finally, season with pomegranate molasses, date syrup or sugar (if needed) and extra salt (if needed). If you can, allow the flavours to mature for a day before consuming.</p>
-<h1><a class="header" href="#kongjorim" id="kongjorim">Kongjorim</a></h1>
-<h2><a class="header" href="#notes-13" id="notes-13">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="kongjorim"><a class="header" href="#kongjorim">Kongjorim</a></h1>
+<h2 id="notes-13"><a class="header" href="#notes-13">Notes</a></h2>
 <blockquote>
 <p>Lasts for one month</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-19" id="ingredients-19">Ingredients</a></h2>
+<h2 id="ingredients-19"><a class="header" href="#ingredients-19">Ingredients</a></h2>
 <ul>
 <li>1 cup dried soya beans</li>
 <li>½ cup soy sauce</li>
@@ -646,19 +655,19 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>2 cloves chopped garlic</li>
 <li>2 teaspoons sesame seeds</li>
 </ul>
-<h2><a class="header" href="#directions-19" id="directions-19">Directions</a></h2>
+<h2 id="directions-19"><a class="header" href="#directions-19">Directions</a></h2>
 <p>Rins beans in cold water. Drain, add 2 cups of cold water and soak overnight</p>
 <p>Bring to a boil and then cook (medium heat) for 10 minutes</p>
 <p>Add soy sauce, sugar, garlic and oil, and cook on low heat for 30 minutes</p>
 <p>Then turn heat to high and mix until sauce caramelises and evaporates.</p>
 <p>Mix in sesame seeds</p>
 <p>Let cool down and transfer to airtight container. Keep in fridge for one month.</p>
-<h1><a class="header" href="#lemon-couscous" id="lemon-couscous">Lemon Couscous</a></h1>
-<h2><a class="header" href="#notes-14" id="notes-14">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lemon-couscous"><a class="header" href="#lemon-couscous">Lemon Couscous</a></h1>
+<h2 id="notes-14"><a class="header" href="#notes-14">Notes</a></h2>
 <blockquote>
 <p>Makes 4 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-20" id="ingredients-20">Ingredients</a></h2>
+<h2 id="ingredients-20"><a class="header" href="#ingredients-20">Ingredients</a></h2>
 <ul>
 <li>2 Tbsp extra virgin olive oil</li>
 <li>1 ½ tsp minced garlic (1 large clove)</li>
@@ -669,18 +678,30 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>2 Tbsp chopped fresh parsley</li>
 <li>170 gr couscous</li>
 </ul>
-<h2><a class="header" href="#directions-20" id="directions-20">Directions</a></h2>
+<h2 id="directions-20"><a class="header" href="#directions-20">Directions</a></h2>
 <p>Heat olive oil in a medium saucepan over medium-low heat.</p>
 <p>Add garlic and sauté until fragrant, about 20 seconds.</p>
 <p>Remove from heat, pour in chicken broth, lemon zest, lemon juice and season with salt to taste. Place over medium-high heat and bring to a boil.</p>
 <p>Pour in couscous, stir then remove from heat and immediately cover with lid. Let rest 4 minutes off heat.</p>
 <p>Add parsley and fluff with a fork. Serve warm.</p>
-<h1><a class="header" href="#lo-mein-with-soba-noodles" id="lo-mein-with-soba-noodles">Lo Mein with Soba Noodles</a></h1>
-<h2><a class="header" href="#notes-15" id="notes-15">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lemon-curd"><a class="header" href="#lemon-curd">Lemon Curd</a></h1>
+<h2 id="ingredients-21"><a class="header" href="#ingredients-21">Ingredients</a></h2>
+<ul>
+<li>100 g white sugar</li>
+<li>15 ml cornstarch</li>
+<li>118 g plant-based milk, (such as soy or almond)</li>
+<li>61 g fresh lemon juice, (about 2 lemons)</li>
+<li>2 teaspoons lemon zest, (from about 1 lemon)</li>
+<li>⅛ teaspoon turmeric, (optional for colour)</li>
+</ul>
+<h2 id="directions-21"><a class="header" href="#directions-21">Directions</a></h2>
+<p>In a small pot, whisk together the sugar and cornstarch. Now mix in the non-dairy milk, lemon juice, lemon zest, and turmeric. Put over medium heat, whisking frequently, until the curd thickens, about 5 minutes. You may need to whisk vigorously as it thickens to ensure a smooth curd.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="lo-mein-with-soba-noodles"><a class="header" href="#lo-mein-with-soba-noodles">Lo Mein with Soba Noodles</a></h1>
+<h2 id="notes-15"><a class="header" href="#notes-15">Notes</a></h2>
 <blockquote>
 <p>Makes 2 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-21" id="ingredients-21">Ingredients</a></h2>
+<h2 id="ingredients-22"><a class="header" href="#ingredients-22">Ingredients</a></h2>
 <ul>
 <li>170 to 225g soba noodles</li>
 <li>3 tbsp soy sauce</li>
@@ -693,18 +714,18 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>300 to 450g of veggies like sliced bell pepper, mushrooms, broccoli, snow peas, julienned carrots, chopped spinach or chard etc.</li>
 <li>salt, black pepper, red pepper flakes to taste</li>
 </ul>
-<h2><a class="header" href="#directions-21" id="directions-21">Directions</a></h2>
+<h2 id="directions-22"><a class="header" href="#directions-22">Directions</a></h2>
 <p>Cook the noodles according to instructions. Bring a pot of water to a boil. Add the noodles and cook for the time mentioned on the package.</p>
 <p>In a bowl combine the soy sauce, sesame oil, sugar and ginger. Mix well and set aside.</p>
 <p>Heat oil in a large skillet over medium heat. Add onions, garlic, chilli, bell peppers and mushrooms and cook for 4 minutes. Stir occasionally.</p>
 <p>Add the broccoli and other veggies if using and a dash of salt and black pepper and cook for another 3 to 4 minutes or until mushrooms are golden brown.</p>
 <p>Add the sauce, cooked noodles to the skillet and mix in. Adjust heat if needed. I usually add a sprinkle of pepper flakes or sriracha and a good dash of freshly ground black pepper. Serve.</p>
-<h1><a class="header" href="#margarita" id="margarita">Margarita</a></h1>
-<h2><a class="header" href="#notes-16" id="notes-16">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="margarita"><a class="header" href="#margarita">Margarita</a></h1>
+<h2 id="notes-16"><a class="header" href="#notes-16">Notes</a></h2>
 <blockquote>
 <p>Makes 1 serving</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-22" id="ingredients-22">Ingredients</a></h2>
+<h2 id="ingredients-23"><a class="header" href="#ingredients-23">Ingredients</a></h2>
 <ul>
 <li>42ml tequila</li>
 <li>28ml lime juice (from half a lime)</li>
@@ -712,12 +733,12 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>14ml agave nectar</li>
 <li>Salt for rim</li>
 </ul>
-<h1><a class="header" href="#mexican-pasta" id="mexican-pasta">Mexican Pasta</a></h1>
-<h2><a class="header" href="#notes-17" id="notes-17">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mexican-pasta"><a class="header" href="#mexican-pasta">Mexican Pasta</a></h1>
+<h2 id="notes-17"><a class="header" href="#notes-17">Notes</a></h2>
 <blockquote>
 <p>Makes 4 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-23" id="ingredients-23">Ingredients</a></h2>
+<h2 id="ingredients-24"><a class="header" href="#ingredients-24">Ingredients</a></h2>
 <ul>
 <li>1 onion - diced</li>
 <li>4 cloves garlic - chopped</li>
@@ -731,18 +752,53 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>sweetcorn - 1 tin</li>
 <li>black beans - 1 tin</li>
 </ul>
-<h2><a class="header" href="#directions-22" id="directions-22">Directions</a></h2>
+<h2 id="directions-23"><a class="header" href="#directions-23">Directions</a></h2>
 <p>In a pan, heat some oil and add the onion, garlic, and chillis. Sauté for 5 minutes, then mix in the bell pepper and taco seasoning.</p>
 <p>Once fragrant, stir in pasta, water, and passata. Cover the pan and simmer on medium heat for 10 minutes, stirring occasionally to prevent sticking, then add in corn and beans.</p>
 <p>Once the pasta is cooked through (about 5 more minutes), mix in the tahini. Season with salt and pepper to taste, then serve warm.</p>
-<h1><a class="header" href="#minnesota-winter-chili" id="minnesota-winter-chili">Minnesota Winter Chili</a></h1>
-<h1><a class="header" href="#mushroom-stroganoff" id="mushroom-stroganoff">Mushroom Stroganoff</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="minnesota-winter-chili"><a class="header" href="#minnesota-winter-chili">Minnesota Winter Chili</a></h1>
+<h2 id="notes-18"><a class="header" href="#notes-18">Notes</a></h2>
+<blockquote>
+<p>Makes 6 servings</p>
+</blockquote>
+<h2 id="ingredients-25"><a class="header" href="#ingredients-25">Ingredients</a></h2>
+<ul>
+<li>2 tablespoons coconut oil or olive oil</li>
+<li>4 garlic cloves, minced</li>
+<li>½ chopped onion</li>
+<li>8–10 medium mushrooms, finely chopped</li>
+<li>½ chopped green bell pepper</li>
+<li>½ chopped red bell pepper</li>
+<li>1 grated carrot</li>
+<li>1 jalapeño pepper or other hot pepper, chopped</li>
+<li>1 cup frozen corn</li>
+<li>1 teaspoon ground cumin</li>
+<li>½ teaspoon ground coriander</li>
+<li>2 tablespoons paprika</li>
+<li>2 tablespoons sugar</li>
+<li>2 teaspoons sea salt, or to taste</li>
+<li>½ teaspoon black pepper</li>
+<li>1 tin chopped tomatoes</li>
+<li>1 packet of passata</li>
+<li>1 tin kidney beans, drained</li>
+<li>1 tin black beans, drained</li>
+<li>1 tin aduki beans, drained</li>
+<li>2 ½ cups water</li>
+<li>½ cup dry bulgur wheat</li>
+<li>Hot sauce or cayenne pepper (optional)</li>
+<li>¼ cup minced fresh cilantro, for garnish</li>
+</ul>
+<h2 id="directions-24"><a class="header" href="#directions-24">Directions</a></h2>
+<p>Add the oil to a large pot. Sauté the vegetables and spices in the oil over medium to medium-low heat for 10 minutes or until tender. Add a few tablespoons of water if the veggies begin sticking to the pot.</p>
+<p>Add the remaining ingredients except the cilantro and simmer over medium-low heat, covered, for 30 minutes. Stir and simmer for an additional 20 to 30 minutes until the veggies are cooked through.</p>
+<p>Season with salt and, if more spice is desired, hot sauce or cayenne pepper to taste. Serve sprinkled with the cilantro.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mushroom-stroganoff"><a class="header" href="#mushroom-stroganoff">Mushroom Stroganoff</a></h1>
 <p><img src="/recipes/content/images/mushroom_stroganoff.jpeg" alt="Mushroom Stroganoff" /></p>
-<h2><a class="header" href="#notes-18" id="notes-18">Notes</a></h2>
+<h2 id="notes-19"><a class="header" href="#notes-19">Notes</a></h2>
 <blockquote>
 <p>Makes 4 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-24" id="ingredients-24">Ingredients</a></h2>
+<h2 id="ingredients-26"><a class="header" href="#ingredients-26">Ingredients</a></h2>
 <ul>
 <li>1 kg chestnut mushrooms roughly sliced</li>
 <li>2 red onions diced</li>
@@ -755,26 +811,26 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>3 tbsp Olive/coconut oil</li>
 <li>Salt and pepper</li>
 </ul>
-<h2><a class="header" href="#optional-ingredients-4" id="optional-ingredients-4">Optional Ingredients</a></h2>
+<h2 id="optional-ingredients-4"><a class="header" href="#optional-ingredients-4">Optional Ingredients</a></h2>
 <ul>
 <li>Brown rice</li>
 </ul>
-<h2><a class="header" href="#directions-23" id="directions-23">Directions</a></h2>
+<h2 id="directions-25"><a class="header" href="#directions-25">Directions</a></h2>
 <p>Firstly prepare the garlic, onion and mushrooms.</p>
 <p>Heat a large shallow pan (this helps to reduce the sauce down faster) with oil adding in the garlic, onion and mushrooms along with a decent pinch of salt and pepper. Cook down for 5 minutes making sure to stir often.</p>
 <p>Once the mushrooms are soft add the coconut milk, mustard, paprika and lemon juice and stir well.</p>
 <p>Cook on a high heat (this helps the sauce to thicken nicely) for 20-25 minutes or until desired consistency. Keep stirring every 5-10 minutes.</p>
 <p>Finally add freshly chopped parsley and stir it into the stroganoff, leaving some to garnish for serving.</p>
-<h2><a class="header" href="#serve-2" id="serve-2">Serve</a></h2>
+<h2 id="serve-2"><a class="header" href="#serve-2">Serve</a></h2>
 <ul>
 <li>With brown rice</li>
 </ul>
-<h1><a class="header" href="#nandos-macho-peas" id="nandos-macho-peas">Nandos Macho Peas</a></h1>
-<h2><a class="header" href="#notes-19" id="notes-19">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nandos-macho-peas"><a class="header" href="#nandos-macho-peas">Nandos Macho Peas</a></h1>
+<h2 id="notes-20"><a class="header" href="#notes-20">Notes</a></h2>
 <blockquote>
 <p>Makes 6 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-25" id="ingredients-25">Ingredients</a></h2>
+<h2 id="ingredients-27"><a class="header" href="#ingredients-27">Ingredients</a></h2>
 <ul>
 <li>400g frozen peas</li>
 <li>Water</li>
@@ -784,15 +840,15 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>Salt</li>
 <li>Chili flakes</li>
 </ul>
-<h2><a class="header" href="#directions-24" id="directions-24">Directions</a></h2>
+<h2 id="directions-26"><a class="header" href="#directions-26">Directions</a></h2>
 <p>Boil the peas, and once they're cooked pour the water away but leave the peas in the pan.</p>
 <p>Stir in the oil, salt, chili and herbs.</p>
-<h1><a class="header" href="#nandos-spicy-rice" id="nandos-spicy-rice">Nandos Spicy Rice</a></h1>
-<h2><a class="header" href="#notes-20" id="notes-20">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nandos-spicy-rice"><a class="header" href="#nandos-spicy-rice">Nandos Spicy Rice</a></h1>
+<h2 id="notes-21"><a class="header" href="#notes-21">Notes</a></h2>
 <blockquote>
 <p>Makes 6 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-26" id="ingredients-26">Ingredients</a></h2>
+<h2 id="ingredients-28"><a class="header" href="#ingredients-28">Ingredients</a></h2>
 <ul>
 <li>400g Basmati rice</li>
 <li>900ml cold water</li>
@@ -806,17 +862,17 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>1 tsp smoked paprika</li>
 <li>1 tsp salt</li>
 </ul>
-<h2><a class="header" href="#directions-25" id="directions-25">Directions</a></h2>
+<h2 id="directions-27"><a class="header" href="#directions-27">Directions</a></h2>
 <p>Pour your rice into a pan along with your onion and one tablespoon of vegetable oil and salt, and cook for a minute until the onion is transparent. Then stir in chipped garlic and chilies, and then tin of tomatoes and 900 ml of water. Once it boils, cover and lower the heat. Stir occasionally.</p>
 <p>When the rice is nearly done turn off the heat, add in your seasonings - turmeric, cayenne pepper and smoked paprika - cover until it's done.</p>
-<h1><a class="header" href="#ramen-variations" id="ramen-variations">Ramen Variations</a></h1>
-<h2><a class="header" href="#tantanmen-ingredients" id="tantanmen-ingredients">Tantanmen Ingredients</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ramen-variations"><a class="header" href="#ramen-variations">Ramen Variations</a></h1>
+<h2 id="tantanmen-ingredients"><a class="header" href="#tantanmen-ingredients">Tantanmen Ingredients</a></h2>
 <ul>
 <li>1 tablespoon peanut butter</li>
 <li>1 tablespoon of Gochujang</li>
 <li>Sprouted beans</li>
 </ul>
-<h2><a class="header" href="#bibim-ramyun-ingredients" id="bibim-ramyun-ingredients">Bibim Ramyun Ingredients</a></h2>
+<h2 id="bibim-ramyun-ingredients"><a class="header" href="#bibim-ramyun-ingredients">Bibim Ramyun Ingredients</a></h2>
 <ul>
 <li>1 tablespoon brown sugar</li>
 <li>1 tablespoon Gochujang</li>
@@ -826,26 +882,26 @@ Place the saucepan over high heat, whisking continuously until the mixture comes
 <li>1 apple</li>
 <li>Cabbage</li>
 </ul>
-<h3><a class="header" href="#directions-26" id="directions-26">Directions</a></h3>
+<h3 id="directions-28"><a class="header" href="#directions-28">Directions</a></h3>
 <p>Cook noodles for 4 minutes, rinse in cold water. Add to sauce, add veg on top</p>
-<h2><a class="header" href="#mayo-ramyun-ingredients" id="mayo-ramyun-ingredients">Mayo Ramyun Ingredients</a></h2>
+<h2 id="mayo-ramyun-ingredients"><a class="header" href="#mayo-ramyun-ingredients">Mayo Ramyun Ingredients</a></h2>
 <ul>
 <li>1 teaspoon oyster sauce</li>
 <li>1 tablespoon unsalted butter</li>
 <li>Spring onions and chili flakes to garnich</li>
 </ul>
-<h3><a class="header" href="#directions-27" id="directions-27">Directions</a></h3>
+<h3 id="directions-29"><a class="header" href="#directions-29">Directions</a></h3>
 <p>Add noodles to boiling water, then add the flakes
 After 3 minutes drain half the water
 On high heat, add oyster sauce, 1/2 pack of seasoning, and cook for 2 minutes
 When most of the water has evaporated, add butter and melt
 Serve, add mayo.</p>
-<h1><a class="header" href="#rossejat" id="rossejat">Rossejat</a></h1>
-<h2><a class="header" href="#notes-21" id="notes-21">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rossejat"><a class="header" href="#rossejat">Rossejat</a></h1>
+<h2 id="notes-22"><a class="header" href="#notes-22">Notes</a></h2>
 <blockquote>
 <p>Makes 4 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-27" id="ingredients-27">Ingredients</a></h2>
+<h2 id="ingredients-29"><a class="header" href="#ingredients-29">Ingredients</a></h2>
 <ul>
 <li>200g pasta</li>
 <li>2 onions</li>
@@ -857,7 +913,7 @@ Serve, add mayo.</p>
 <li>350ml vegetable stock</li>
 <li>White wine</li>
 </ul>
-<h2><a class="header" href="#directions-28" id="directions-28">Directions</a></h2>
+<h2 id="directions-30"><a class="header" href="#directions-30">Directions</a></h2>
 <ul>
 <li>Heat a pan and toast pasta in batches, and set aside.</li>
 <li>Prepare stock and set aside.</li>
@@ -869,8 +925,8 @@ Serve, add mayo.</p>
 <li>Add the stock and raise fire to max for 10 minutes. Do not mix.</li>
 <li>Reduce fire to low, cover and cook for 20 minutes.</li>
 </ul>
-<h1><a class="header" href="#roasted-balsamic-brussels-sprouts" id="roasted-balsamic-brussels-sprouts">Roasted Balsamic Brussels Sprouts</a></h1>
-<h2><a class="header" href="#ingredients-28" id="ingredients-28">Ingredients</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="roasted-balsamic-brussels-sprouts"><a class="header" href="#roasted-balsamic-brussels-sprouts">Roasted Balsamic Brussels Sprouts</a></h1>
+<h2 id="ingredients-30"><a class="header" href="#ingredients-30">Ingredients</a></h2>
 <ul>
 <li>620g Brussels Sprouts, halved ⁣</li>
 <li>A couple handfuls pecan nuts⁣</li>
@@ -880,35 +936,35 @@ Serve, add mayo.</p>
 <li>½tsp garlic granules - ½ tsp dried chilli flakes - olive oil, for cooking⁣</li>
 <li>salt &amp; pepper⁣</li>
 </ul>
-<h2><a class="header" href="#directions-29" id="directions-29">Directions</a></h2>
+<h2 id="directions-31"><a class="header" href="#directions-31">Directions</a></h2>
 <p>Preheat the oven to 200°C. Line a large baking tray with non stick baking parchment.⁣</p>
 <p>Add your sliced sprouts to the lined baking tray then drizzle with a little olive oil, rub the oil into the sprouts using your hands, then season with salt and pepper. ⁣</p>
 <p>Roast in the oven for 10 mins until slightly soft.⁣</p>
 <p>Meanwhile make the glaze by adding the balsamic vinegar, maple syrup, garlic granules chilli flakes to a small bowl of jug, then whisk everything together until combined. ⁣</p>
 <p>Take out the sprouts, add the pecans &amp; dried cranberries, then drizzle with the balsamic glaze. ⁣</p>
 <p>Place back into the oven and cook for another 5-10 minutes, until the sprouts are roasted but soft.</p>
-<h1><a class="header" href="#sushi-rice" id="sushi-rice">Sushi Rice</a></h1>
-<h2><a class="header" href="#notes-22" id="notes-22">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="sushi-rice"><a class="header" href="#sushi-rice">Sushi Rice</a></h1>
+<h2 id="notes-23"><a class="header" href="#notes-23">Notes</a></h2>
 <blockquote>
 <p>Makes 2 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-29" id="ingredients-29">Ingredients</a></h2>
+<h2 id="ingredients-31"><a class="header" href="#ingredients-31">Ingredients</a></h2>
 <ul>
 <li>200g sushi rice</li>
 <li>240ml water</li>
 <li>50ml sushi vinegar</li>
 </ul>
-<h2><a class="header" href="#directions-30" id="directions-30">Directions</a></h2>
+<h2 id="directions-32"><a class="header" href="#directions-32">Directions</a></h2>
 <p>Wash sushi rice in cold water 5 times, until water comes our clear.</p>
 <p>Cover with fresh water and leave for 30 minutes.</p>
 <p>Drain, put in LeCreusset pot with 240ml water on high heat until it boils. Then cover, and reduce heat, and cook for 14 minutes, then turn on heat to max for 10 seconds and remove from the fire.</p>
 <p>Keep covered for another 15 minutes, then mix the sushi vinegar and leave to cool down.</p>
-<h1><a class="header" href="#tahini--miso-dressing" id="tahini--miso-dressing">Tahini + Miso dressing</a></h1>
-<h2><a class="header" href="#notes-23" id="notes-23">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tahini--miso-dressing"><a class="header" href="#tahini--miso-dressing">Tahini + Miso dressing</a></h1>
+<h2 id="notes-24"><a class="header" href="#notes-24">Notes</a></h2>
 <blockquote>
 <p>Ideal dressing for broccoli</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-30" id="ingredients-30">Ingredients</a></h2>
+<h2 id="ingredients-32"><a class="header" href="#ingredients-32">Ingredients</a></h2>
 <ul>
 <li>¼ cup of tahini</li>
 <li>Juice of 1 lemon</li>
@@ -917,13 +973,13 @@ Serve, add mayo.</p>
 <li>Pinch of red pepper flakes</li>
 <li>Water, as needed, to thin.</li>
 </ul>
-<h1><a class="header" href="#vegetable-vietnamese-spring-rolls" id="vegetable-vietnamese-spring-rolls">Vegetable Vietnamese Spring Rolls</a></h1>
-<h2><a class="header" href="#notes-24" id="notes-24">Notes</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vegetable-vietnamese-spring-rolls"><a class="header" href="#vegetable-vietnamese-spring-rolls">Vegetable Vietnamese Spring Rolls</a></h1>
+<h2 id="notes-25"><a class="header" href="#notes-25">Notes</a></h2>
 <blockquote>
 <p>Makes 2 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients-31" id="ingredients-31">Ingredients</a></h2>
-<h3><a class="header" href="#spring-rolls" id="spring-rolls">Spring Rolls</a></h3>
+<h2 id="ingredients-33"><a class="header" href="#ingredients-33">Ingredients</a></h2>
+<h3 id="spring-rolls"><a class="header" href="#spring-rolls">Spring Rolls</a></h3>
 <ul>
 <li>2 large carrots</li>
 <li>1 red bell pepper</li>
@@ -936,7 +992,7 @@ Serve, add mayo.</p>
 <li>½ cup fresh mint</li>
 <li>6 to 8 rice paper spring roll wrappers</li>
 </ul>
-<h3><a class="header" href="#sauce" id="sauce">Sauce</a></h3>
+<h3 id="sauce"><a class="header" href="#sauce">Sauce</a></h3>
 <ul>
 <li>½ cup salted roasted almonds</li>
 <li>½ cup canned coconut milk 120 mL</li>
@@ -945,7 +1001,7 @@ Serve, add mayo.</p>
 <li>1 Tbsp honey 15 g</li>
 <li>3 cloves garlic</li>
 </ul>
-<h3><a class="header" href="#alternate-sauce" id="alternate-sauce">Alternate Sauce</a></h3>
+<h3 id="alternate-sauce"><a class="header" href="#alternate-sauce">Alternate Sauce</a></h3>
 <ul>
 <li>2 tbsp peanut butter</li>
 <li>½ lime</li>
@@ -954,7 +1010,7 @@ Serve, add mayo.</p>
 <li>1 tsp miso paste</li>
 <li>1 tbsp water</li>
 </ul>
-<h2><a class="header" href="#directions-31" id="directions-31">Directions</a></h2>
+<h2 id="directions-33"><a class="header" href="#directions-33">Directions</a></h2>
 <p>Combine all “Sauce” ingredients in a blender until smooth.</p>
 <p>Fill a shallow dish with warm water. Working one at a time, gently place a rice paper in the water for about 15 seconds, or until soft and pliable. Move the paper to a damp surface. Stack veggies and herbs on the rice paper in a long narrow row, leaving about 2 inches on either side. Fold the sides of the rice paper over the mound, then gently roll.</p>
 
@@ -962,9 +1018,7 @@ Serve, add mayo.</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
 
-                        
 
                         <div style="clear: both"></div>
                     </nav>
@@ -972,49 +1026,35 @@ Serve, add mayo.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
 
-                
             </nav>
 
         </div>
 
-        
 
-        
 
-        
 
-        
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
-        
 
-        
 
-        
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
-        
 
-        
-        
-        <script type="text/javascript">
+        <script>
         window.addEventListener('load', function() {
             window.setTimeout(window.print, 100);
         });
         </script>
-        
-        
 
+    </div>
     </body>
 </html>

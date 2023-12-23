@@ -1,1 +1,0 @@
-# Minnesota Winter Chili

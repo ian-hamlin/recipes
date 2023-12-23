@@ -1,40 +1,27 @@
 <!DOCTYPE HTML>
-<html lang="en" class="sidebar-visible no-js light">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>Empanadas - Recipes</title>
-        
-        
 
 
         <!-- Custom HTML head -->
         
-
-
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="A collection of recipes">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff">
 
-        
         <link rel="icon" href="favicon.svg">
-        
-        
         <link rel="shortcut icon" href="favicon.png">
-        
         <link rel="stylesheet" href="css/variables.css">
         <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/chrome.css">
-        
         <link rel="stylesheet" href="css/print.css" media="print">
-        
 
         <!-- Fonts -->
         <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        
         <link rel="stylesheet" href="fonts/fonts.css">
-        
 
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="highlight.css">
@@ -42,19 +29,18 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        
 
-        
     </head>
-    <body>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -70,79 +56,104 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('no-js')
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add('js');
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
 
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
-            var html = document.querySelector('html');
-            var sidebar = 'hidden';
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="recipes.html">Recipes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="banana_bread.html">Banana Bread</a></li><li class="chapter-item expanded "><a href="bean_mix.html">Bean Mix</a></li><li class="chapter-item expanded "><a href="beef_wellington.html">&quot;Beef&quot; Wellington</a></li><li class="chapter-item expanded "><a href="black_bean_plantain_chilli.html">Black Bean Plantain Chilli</a></li><li class="chapter-item expanded "><a href="blueberry_and_coconut_smoothie.html">Blueberry &amp; coconut smoothie</a></li><li class="chapter-item expanded "><a href="cantuccini.html">Cantuccini</a></li><li class="chapter-item expanded "><a href="carrot_cake_quinoa_truffles.html">Carrot Cake Quinoa Truffles</a></li><li class="chapter-item expanded "><a href="coconut_cake.html">Coconut Cake</a></li><li class="chapter-item expanded "><a href="crunchy_kale_crisps.html">Crunchy Kale Crisps</a></li><li class="chapter-item expanded "><a href="egyptian_lentil_soup.html">Egyptian Lentil Soup</a></li><li class="chapter-item expanded "><a href="empanadas.html" class="active">Empanadas</a></li><li class="chapter-item expanded "><a href="ethiopian_wild_rice_pilaf.html">Ethiopian Wild Rice Pilaf</a></li><li class="chapter-item expanded "><a href="feta_cheese_and_tomato_pasta.html">Feta Cheese And Tomato Pasta</a></li><li class="chapter-item expanded "><a href="flan.html">Flan (No bake)</a></li><li class="chapter-item expanded "><a href="french_onion_soup.html">French Onion Soup</a></li><li class="chapter-item expanded "><a href="goulash.html">Goulash</a></li><li class="chapter-item expanded "><a href="horchata.html">Horchata</a></li><li class="chapter-item expanded "><a href="indian_spinach_fritters.html">Indian Spinach Fritters</a></li><li class="chapter-item expanded "><a href="jackfruit_tagine.html">Jackfruit Tagine</a></li><li class="chapter-item expanded "><a href="kongjorim.html">Kongjorim</a></li><li class="chapter-item expanded "><a href="lemon_couscous.html">Lemon Couscous</a></li><li class="chapter-item expanded "><a href="lo_mein_with_soba_noodles.html">Lo Mein with Soba Noodles</a></li><li class="chapter-item expanded "><a href="margarita.html">Margarita</a></li><li class="chapter-item expanded "><a href="mexican_pasta.html">Mexican Pasta</a></li><li class="chapter-item expanded "><a href="minnesota_winter_chili.html">Minnesota Winter Chili</a></li><li class="chapter-item expanded "><a href="mushroom_stroganoff.html">Mushroom Stroganoff</a></li><li class="chapter-item expanded "><a href="nandos_macho_peas.html">Nandos Macho Peas</a></li><li class="chapter-item expanded "><a href="nandos_spicy_rice.html">Nandos Spicy Rice</a></li><li class="chapter-item expanded "><a href="ramen_variations.html">Ramen Variations</a></li><li class="chapter-item expanded "><a href="rossejat.html">Rossejat</a></li><li class="chapter-item expanded "><a href="roasted_brussels_sprouts.html">Roasted Balsamic Brussels Sprouts</a></li><li class="chapter-item expanded "><a href="sushi_rice.html">Sushi Rice</a></li><li class="chapter-item expanded "><a href="tahini_and_miso_dressing.html">Tahini + Miso dressing</a></li><li class="chapter-item expanded "><a href="vegetable_vietnamese_spring_rolls.html">Vegetable Vietnamese Spring Rolls</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="recipes.html">Recipes</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="banana_bread.html">Banana Bread</a></li><li class="chapter-item expanded "><a href="bean_mix.html">Bean Mix</a></li><li class="chapter-item expanded "><a href="beef_wellington.html">"Beef" Wellington</a></li><li class="chapter-item expanded "><a href="black_bean_plantain_chilli.html">Black Bean Plantain Chilli</a></li><li class="chapter-item expanded "><a href="blueberry_and_coconut_smoothie.html">Blueberry & coconut smoothie</a></li><li class="chapter-item expanded "><a href="cantuccini.html">Cantuccini</a></li><li class="chapter-item expanded "><a href="carrot_cake_quinoa_truffles.html">Carrot Cake Quinoa Truffles</a></li><li class="chapter-item expanded "><a href="coconut_cake.html">Coconut Cake</a></li><li class="chapter-item expanded "><a href="crunchy_kale_crisps.html">Crunchy Kale Crisps</a></li><li class="chapter-item expanded "><a href="egyptian_lentil_soup.html">Egyptian Lentil Soup</a></li><li class="chapter-item expanded "><a href="empanadas.html" class="active">Empanadas</a></li><li class="chapter-item expanded "><a href="ethiopian_wild_rice_pilaf.html">Ethiopian Wild Rice Pilaf</a></li><li class="chapter-item expanded "><a href="feta_cheese_and_tomato_pasta.html">Feta Cheese And Tomato Pasta</a></li><li class="chapter-item expanded "><a href="flan.html">Flan (No bake)</a></li><li class="chapter-item expanded "><a href="french_onion_soup.html">French Onion Soup</a></li><li class="chapter-item expanded "><a href="goulash.html">Goulash</a></li><li class="chapter-item expanded "><a href="horchata.html">Horchata</a></li><li class="chapter-item expanded "><a href="indian_spinach_fritters.html">Indian Spinach Fritters</a></li><li class="chapter-item expanded "><a href="jackfruit_tagine.html">Jackfruit Tagine</a></li><li class="chapter-item expanded "><a href="kongjorim.html">Kongjorim</a></li><li class="chapter-item expanded "><a href="lemon_couscous.html">Lemon Couscous</a></li><li class="chapter-item expanded "><a href="lemon_curd.html">Lemon Curd</a></li><li class="chapter-item expanded "><a href="lo_mein_with_soba_noodles.html">Lo Mein with Soba Noodles</a></li><li class="chapter-item expanded "><a href="margarita.html">Margarita</a></li><li class="chapter-item expanded "><a href="mexican_pasta.html">Mexican Pasta</a></li><li class="chapter-item expanded "><a href="minnesota_winter_chili.html">Minnesota Winter Chili</a></li><li class="chapter-item expanded "><a href="mushroom_stroganoff.html">Mushroom Stroganoff</a></li><li class="chapter-item expanded "><a href="nandos_macho_peas.html">Nandos Macho Peas</a></li><li class="chapter-item expanded "><a href="nandos_spicy_rice.html">Nandos Spicy Rice</a></li><li class="chapter-item expanded "><a href="ramen_variations.html">Ramen Variations</a></li><li class="chapter-item expanded "><a href="rossejat.html">Rossejat</a></li><li class="chapter-item expanded "><a href="roasted_brussels_sprouts.html">Roasted Balsamic Brussels Sprouts</a></li><li class="chapter-item expanded "><a href="sushi_rice.html">Sushi Rice</a></li><li class="chapter-item expanded "><a href="tahini_and_miso_dressing.html">Tahini + Miso dressing</a></li><li class="chapter-item expanded "><a href="vegetable_vietnamese_spring_rolls.html">Vegetable Vietnamese Spring Rolls</a></li></ol></li></ol>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky bordered">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
-                        </button>
+                        </label>
                         <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
-                        
                     </div>
 
                     <h1 class="menu-title">Recipes</h1>
 
                     <div class="right-buttons">
-                        
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        
-                        
+
                     </div>
                 </div>
 
-                
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -150,10 +161,9 @@
                         </ul>
                     </div>
                 </div>
-                
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -163,12 +173,12 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#empanadas" id="empanadas">Empanadas</a></h1>
-<h2><a class="header" href="#notes" id="notes">Notes</a></h2>
+                        <h1 id="empanadas"><a class="header" href="#empanadas">Empanadas</a></h1>
+<h2 id="notes"><a class="header" href="#notes">Notes</a></h2>
 <blockquote>
 <p>Makes 12 servings</p>
 </blockquote>
-<h2><a class="header" href="#ingredients" id="ingredients">Ingredients</a></h2>
+<h2 id="ingredients"><a class="header" href="#ingredients">Ingredients</a></h2>
 <ul>
 <li>Vegetable oil</li>
 <li>½ onion</li>
@@ -184,11 +194,11 @@
 <li>Pitted olives</li>
 <li>12 <a href="https://www.casaargentina.co.uk/deli/frozen-foods/casa-argentina-tapas-de-empanadas-criolla-vegana-empanada-disc-criolla-style-vegan-medium-size-12x330g-12cm-815.html">Empanada discs</a></li>
 </ul>
-<h2><a class="header" href="#optional-ingredients" id="optional-ingredients">Optional Ingredients</a></h2>
+<h2 id="optional-ingredients"><a class="header" href="#optional-ingredients">Optional Ingredients</a></h2>
 <ul>
 <li>Ketchup and mustard for glazing</li>
 </ul>
-<h2><a class="header" href="#directions" id="directions">Directions</a></h2>
+<h2 id="directions"><a class="header" href="#directions">Directions</a></h2>
 <p>In a large pan over medium heat, add 2 tablespoons of vegetable oil and cook the chopped tempeh, onion, minced garlic and cumin for 5-8 minutes or until fragrant and translucent.</p>
 <p>Add chopped pepper, diced potato, and spices and cook until pepper and potato are soft. Remove from heat and allow to cool a bit while before assembling the empanadas.</p>
 <p>Add chopped olives when assembling.</p>
@@ -199,17 +209,13 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                        
                             <a rel="prev" href="egyptian_lentil_soup.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                        
 
-                        
-                            <a rel="next" href="ethiopian_wild_rice_pilaf.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="ethiopian_wild_rice_pilaf.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-                        
 
                         <div style="clear: both"></div>
                     </nav>
@@ -217,49 +223,36 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                
                     <a rel="prev" href="egyptian_lentil_soup.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                
 
-                
-                    <a rel="next" href="ethiopian_wild_rice_pilaf.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="ethiopian_wild_rice_pilaf.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
-                
             </nav>
 
         </div>
 
-        
 
-        
 
-        
 
-        
-        <script type="text/javascript">
+        <script>
             window.playground_copyable = true;
         </script>
-        
 
-        
 
-        
-        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
-        
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
-        
 
-        
 
+    </div>
     </body>
 </html>
