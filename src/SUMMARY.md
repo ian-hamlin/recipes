@@ -30,6 +30,7 @@
   - [Mushroom Stroganoff](./mushroom_stroganoff.md)
   - [Nandos Macho Peas](./nandos_macho_peas.md)
   - [Nandos Spicy Rice](./nandos_spicy_rice.md)
+  - [Portobello mushroom Stir Fry](./portobello_mushroom_stir_fry.md)
   - [Ramen Variations](./ramen_variations.md)
   - [Rossejat](./rossejat.md)
   - [Roasted Balsamic Brussels Sprouts](./roasted_brussels_sprouts.md)
