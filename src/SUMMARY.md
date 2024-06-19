@@ -24,6 +24,7 @@
   - [Lemon Couscous](./lemon_couscous.md)
   - [Lemon Curd](./lemon_curd.md)
   - [Lo Mein with Soba Noodles](./lo_mein_with_soba_noodles.md)
+  - [Marinade (Smoked)](./marinade_smoked.md)
   - [Margarita](./margarita.md)
   - [Mexican Pasta](./mexican_pasta.md)
   - [Minnesota Winter Chili](./minnesota_winter_chili.md)
