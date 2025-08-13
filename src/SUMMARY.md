@@ -37,4 +37,5 @@
   - [Roasted Balsamic Brussels Sprouts](./roasted_brussels_sprouts.md)
   - [Sushi Rice](./sushi_rice.md)
   - [Tahini + Miso dressing](./tahini_and_miso_dressing.md)
+  - [Toasted Spiced Chickpeas](./toasted_spiced_chickpeas.md)
   - [Vegetable Vietnamese Spring Rolls](./vegetable_vietnamese_spring_rolls.md)
