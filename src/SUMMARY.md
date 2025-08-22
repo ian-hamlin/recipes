@@ -35,6 +35,7 @@
   - [Ramen Variations](./ramen_variations.md)
   - [Rossejat](./rossejat.md)
   - [Roasted Balsamic Brussels Sprouts](./roasted_brussels_sprouts.md)
+  - [Swedish Pizza Salad](./classic_swedish_pizza_salad.md)
   - [Sushi Rice](./sushi_rice.md)
   - [Tahini + Miso dressing](./tahini_and_miso_dressing.md)
   - [Toasted Spiced Chickpeas](./toasted_spiced_chickpeas.md)
